@@ -14,7 +14,9 @@ public class Splash extends AppCompatActivity {
 
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState) {#
+
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
         tv = (TextView) findViewById(R.id.tv);
