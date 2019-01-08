@@ -14,7 +14,7 @@ public class Splash extends AppCompatActivity {
 
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {#
+    protected void onCreate(Bundle savedInstanceState) {
 
 
         super.onCreate(savedInstanceState);
