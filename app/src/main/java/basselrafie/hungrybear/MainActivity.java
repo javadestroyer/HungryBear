@@ -19,6 +19,7 @@ public class MainActivity extends AppCompatActivity {
     ImageButton pasta;
     ImageButton steak;
     Button allMenus;
+    Button Admin;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,6 +35,15 @@ public class MainActivity extends AppCompatActivity {
         pasta = findViewById(R.id.pasta);
         steak = findViewById(R.id.steak);
         allMenus = findViewById(R.id.allMenus);
+        Admin = findViewById(R.id.Bn_Admin);
+
+        Admin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent j = new Intent(MainActivity.this, AdminHome.class);
+                startActivity(j);
+            }
+        });
 
         pizza.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -114,10 +124,7 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent2);
             }
         });
-    }
 
-    public void onClick(View v) {
-        Intent i = new Intent(this, AdminHome.class);
-        startActivity(i);
+
     }
 }
