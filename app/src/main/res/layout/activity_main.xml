@@ -226,4 +226,13 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.95" />
+
+    <Button
+        android:id="@+id/AminButton"
+        android:layout_width="55dp"
+        android:layout_height="33dp"
+        android:onClick="onClick"
+        android:text="Button"
+        tools:layout_editor_absoluteX="355dp"
+        tools:layout_editor_absoluteY="13dp" />
 </android.support.constraint.ConstraintLayout>
