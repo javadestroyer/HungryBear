@@ -51,6 +51,107 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txt_rid"/>
 
+    <CheckBox
+        android:id="@+id/cb_pizza"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:text="Pizza"
+        app:layout_constraintTop_toBottomOf="@+id/txt_rname"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <CheckBox
+        android:id="@+id/cb_steak"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:text="Steak"
+        app:layout_constraintTop_toBottomOf="@+id/cb_pizza"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <CheckBox
+        android:id="@+id/cb_salad"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:text="Salat"
+        app:layout_constraintTop_toBottomOf="@+id/cb_steak"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <CheckBox
+        android:id="@+id/cb_doener"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:text="Döner"
+        app:layout_constraintTop_toBottomOf="@id/txt_rname"
+        app:layout_constraintEnd_toStartOf="@id/cb_pizza"/>
+
+    <CheckBox
+        android:id="@+id/cb_asian"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:text="Asiatisch"
+        app:layout_constraintTop_toBottomOf="@id/cb_doener"
+        app:layout_constraintEnd_toStartOf="@id/cb_steak"/>
+
+    <CheckBox
+        android:id="@+id/cb_baguette"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:text="Baguette"
+        app:layout_constraintTop_toBottomOf="@id/cb_asian"
+        app:layout_constraintEnd_toStartOf="@id/cb_salad"/>
+
+    <CheckBox
+        android:id="@+id/cb_italian"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:text="Italienisch"
+        app:layout_constraintTop_toBottomOf="@id/txt_rname"
+        app:layout_constraintStart_toEndOf="@id/cb_pizza"/>
+
+    <CheckBox
+        android:id="@+id/cb_burger"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:text="Burger"
+        app:layout_constraintTop_toBottomOf="@id/cb_italian"
+        app:layout_constraintStart_toEndOf="@id/cb_steak"/>
+
+    <CheckBox
+        android:id="@+id/cb_fish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:text="Fisch"
+        app:layout_constraintTop_toBottomOf="@id/cb_burger"
+        app:layout_constraintStart_toEndOf="@id/cb_salad"/>
 
     <Button
         android:id="@+id/bn_update"
@@ -62,5 +163,5 @@
         android:text="Update"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txt_rname"/>
+        app:layout_constraintTop_toBottomOf="@+id/cb_salad"/>
 </android.support.constraint.ConstraintLayout>
