@@ -15,7 +15,7 @@ public class Restaurants {
     @ColumnInfo(name = "RestaurantName")
     private String rname;
 
-    @ColumnInfo(name = "Döner")
+    @ColumnInfo(name = "Doener")
     private String rdoener;
 
     @ColumnInfo(name = "Pizza")

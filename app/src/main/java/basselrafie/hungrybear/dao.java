@@ -23,7 +23,7 @@ public interface dao {
     @Update
     public void updateRestaurant(Restaurants restaurants);
 
-    @Query("SELECT * FROM restaurant WHERE Döner = 'true'")
+    @Query("SELECT * FROM restaurant WHERE Doener = 'true'")
     public List<Restaurants> getDoener();
 
     @Query("SELECT * FROM restaurant WHERE Pizza = 'true'")
