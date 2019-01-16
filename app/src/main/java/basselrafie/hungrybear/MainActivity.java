@@ -11,12 +11,12 @@ public class MainActivity extends AppCompatActivity {
 
     ImageButton burger;
     ImageButton pizza;
-    ImageButton calzone;
+    ImageButton italian;
     ImageButton baguette;
     ImageButton asian;
     ImageButton doener;
     ImageButton salad;
-    ImageButton pasta;
+    ImageButton fish;
     ImageButton steak;
     Button allMenus;
     Button Admin;
@@ -27,12 +27,12 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         burger = findViewById(R.id.burger);
         pizza = findViewById(R.id.pizza);
-        calzone = findViewById(R.id.calzone);
+        italian = findViewById(R.id.italian);
         baguette = findViewById(R.id.baguette);
         asian = findViewById(R.id.asian);
         doener = findViewById(R.id.doener);
         salad = findViewById(R.id.salad);
-        pasta = findViewById(R.id.pasta);
+        fish = findViewById(R.id.fish);
         steak = findViewById(R.id.steak);
         allMenus = findViewById(R.id.allMenus);
         Admin = findViewById(R.id.Bn_Admin);
@@ -61,7 +61,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        calzone.setOnClickListener(new View.OnClickListener() {
+        italian.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent2 = new Intent(MainActivity.this, Main2Activity.class);
@@ -101,7 +101,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        pasta.setOnClickListener(new View.OnClickListener() {
+        fish.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent2 = new Intent(MainActivity.this, Main2Activity.class);

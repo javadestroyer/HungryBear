@@ -49,14 +49,12 @@
         app:srcCompat="@drawable/pizza" />
 
     <ImageButton
-        android:id="@+id/calzone"
+        android:id="@+id/italian"
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp"
         android:scaleType="fitXY"
         android:scaleX="1.2"
@@ -150,15 +148,14 @@
         app:srcCompat="@drawable/salad" />
 
     <ImageButton
-        android:id="@+id/pasta"
+        android:id="@+id/fish"
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp"
+        android:contentDescription="fish"
         android:scaleType="fitXY"
         android:scaleX="1.2"
         android:scaleY="1.2"
@@ -167,7 +164,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.78"
-        app:srcCompat="@drawable/pasta" />
+        app:srcCompat="@drawable/fish" />
 
     <ImageButton
         android:id="@+id/steak"
