@@ -88,8 +88,8 @@ public class MainActivity extends AppCompatActivity {
         doener.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent2 = new Intent(MainActivity.this, Main2Activity.class);
-                startActivity(intent2);
+                Intent iDoener = new Intent(MainActivity.this, DoenerView.class);
+                startActivity(iDoener);
             }
         });
 

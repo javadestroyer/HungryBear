@@ -18,7 +18,8 @@
         </activity>
         <activity android:name=".MainActivity" />
         <activity android:name=".Main2Activity" />
-        <activity android:name=".AdminHome"></activity>
+        <activity android:name=".AdminHome" />
+        <activity android:name=".DoenerView"></activity>
     </application>
 
 </manifest>
