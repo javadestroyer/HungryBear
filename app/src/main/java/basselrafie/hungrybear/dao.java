@@ -45,7 +45,7 @@ public interface dao {
     public List<Restaurants> getBaguette();
 
     @Query("SELECT * FROM restaurant WHERE Salat = 'true'")
-    public List<Restaurants> getSalat();
+    public List<Restaurants> getSalad();
 
     @Query("SELECT * FROM restaurant WHERE Fisch = 'true'")
     public List<Restaurants> getFish();

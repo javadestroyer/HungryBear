@@ -17,13 +17,17 @@
             </intent-filter>
         </activity>
         <activity android:name=".MainActivity" />
-        <activity android:name=".Main2Activity" />
         <activity android:name=".AdminHome" />
         <activity android:name=".DoenerView" />
         <activity android:name=".PizzaView" />
         <activity android:name=".BurgerView" />
         <activity android:name=".ItalianView" />
-        <activity android:name=".BaguetteView"></activity>
+        <activity android:name=".BaguetteView" />
+        <activity android:name=".AsianView" />
+        <activity android:name=".SaladView" />
+        <activity android:name=".FishView" />
+        <activity android:name=".SteakView" />
+        <activity android:name=".AllView"></activity>
     </application>
 
 </manifest>

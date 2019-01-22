@@ -14,12 +14,12 @@ import java.util.List;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class ViewRestaurantFragment extends Fragment {
+public class AllFragment extends Fragment {
 
     private TextView TxtInfo;
 
 
-    public ViewRestaurantFragment() {
+    public AllFragment() {
         // Required empty public constructor
     }
 
@@ -28,7 +28,7 @@ public class ViewRestaurantFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View view = inflater.inflate(R.layout.fragment_view_restaurant, container, false);
+        View view = inflater.inflate(R.layout.fragment_all, container, false);
         TxtInfo = view.findViewById(R.id.txt_display_info);
 
         List<Restaurants> restaurants = AdminHome.restaurantDatabase.dao().getRestaurants();
@@ -39,20 +39,8 @@ public class ViewRestaurantFragment extends Fragment {
         {
             int rid = rest.getRid();
             String rname = rest.getRname();
-            String rpizza = rest.getRpizza();
-            String rburger = rest.getRburger();
-            String ritalian = rest.getRitalian();
-            String rbaguette = rest.getRbaguette();
-            String rasian = rest.getRasian();
-            String rdoener = rest.getRdoener();
-            String rsalad = rest.getRsalat();
-            String rfish = rest.getRfish();
-            String rsteak = rest.getRsteak();
 
-            info = info + "\n\nId: " + rid + "\nRestaurant: " + rname +
-                    "\nPizza: " + rpizza + " | Burger: " + rburger + " | Italian: " + ritalian +
-                    "\nBaguette: " + rbaguette + " | Asian: " + rasian + " | Döner: " + rdoener +
-                    "\nSalad: " + rsalad + " | Fish: " + rfish + " | Steak: " + rsteak;
+            info = info + "\n\nId: " + rid + "\nRestaurant: " + rname;
         }
 
         TxtInfo.setText(info);
