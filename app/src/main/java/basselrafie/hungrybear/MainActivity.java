@@ -48,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
         pizza.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent2 = new Intent(MainActivity.this, Main2Activity.class);
+                Intent intent2 = new Intent(MainActivity.this, PizzaView.class);
                 startActivity(intent2);
             }
         });
@@ -56,7 +56,7 @@ public class MainActivity extends AppCompatActivity {
         burger.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent2 = new Intent(MainActivity.this, Main2Activity.class);
+                Intent intent2 = new Intent(MainActivity.this, BurgerView.class);
                 startActivity(intent2);
             }
         });
@@ -64,7 +64,7 @@ public class MainActivity extends AppCompatActivity {
         italian.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent2 = new Intent(MainActivity.this, Main2Activity.class);
+                Intent intent2 = new Intent(MainActivity.this, ItalianView.class);
                 startActivity(intent2);
             }
         });
@@ -72,7 +72,7 @@ public class MainActivity extends AppCompatActivity {
         baguette.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent2 = new Intent(MainActivity.this, Main2Activity.class);
+                Intent intent2 = new Intent(MainActivity.this, BaguetteView.class);
                 startActivity(intent2);
             }
         });

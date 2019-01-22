@@ -6,7 +6,6 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.TextView;
 
 import java.util.List;
@@ -15,12 +14,12 @@ import java.util.List;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class DoenerFragment extends Fragment {
+public class ItalianFragment extends Fragment {
 
     private TextView TxtInfo;
 
 
-    public DoenerFragment() {
+    public ItalianFragment() {
         // Required empty public constructor
     }
 

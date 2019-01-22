@@ -6,7 +6,6 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.TextView;
 
 import java.util.List;
@@ -15,12 +14,12 @@ import java.util.List;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class DoenerFragment extends Fragment {
+public class PizzaFragment extends Fragment {
 
     private TextView TxtInfo;
 
 
-    public DoenerFragment() {
+    public PizzaFragment() {
         // Required empty public constructor
     }
 
@@ -32,7 +31,7 @@ public class DoenerFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_view_restaurant, container, false);
         TxtInfo = view.findViewById(R.id.txt_display_info);
 
-        List<Restaurants> restaurants = AdminHome.restaurantDatabase.dao().getDoener();
+        List<Restaurants> restaurants = AdminHome.restaurantDatabase.dao().getPizza();
 
         String info = " ";
 

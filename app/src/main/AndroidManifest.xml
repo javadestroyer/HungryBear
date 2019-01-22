@@ -19,7 +19,11 @@
         <activity android:name=".MainActivity" />
         <activity android:name=".Main2Activity" />
         <activity android:name=".AdminHome" />
-        <activity android:name=".DoenerView"></activity>
+        <activity android:name=".DoenerView" />
+        <activity android:name=".PizzaView" />
+        <activity android:name=".BurgerView" />
+        <activity android:name=".ItalianView" />
+        <activity android:name=".BaguetteView"></activity>
     </application>
 
 </manifest>
