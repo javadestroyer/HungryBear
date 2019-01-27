@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
     ImageButton fish;
     ImageButton steak;
     Button allMenus;
-    Button Admin;
+    ImageButton Admin;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
