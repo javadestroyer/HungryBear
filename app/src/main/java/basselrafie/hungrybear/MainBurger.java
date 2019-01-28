@@ -35,7 +35,7 @@ public class MainBurger extends AppCompatActivity {
         //restaurants.add(new Restaurants("Line 4", "Line 2", "","","","","","","",""));
 
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
-        adapter = new RestaurantAdapter(restaurants);
+        adapter = new RestaurantAdapter(restaurants,this);
         recyclerView.setAdapter(adapter);
     }
 }

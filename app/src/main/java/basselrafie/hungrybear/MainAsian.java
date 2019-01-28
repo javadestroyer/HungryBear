@@ -1,6 +1,7 @@
 package basselrafie.hungrybear;
 
 import android.arch.persistence.room.Room;
+import android.content.Context;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
@@ -12,6 +13,7 @@ public class MainAsian extends AppCompatActivity {
 
     RecyclerView recyclerView;
     RecyclerView.Adapter adapter;
+    private Context context;
     public static RestaurantDatabase restaurantDatabase;
 
 
@@ -22,6 +24,7 @@ public class MainAsian extends AppCompatActivity {
         restaurantDatabase = Room.databaseBuilder(getApplicationContext(),RestaurantDatabase.class, "restaurantdb").allowMainThreadQueries().build();
 
         recyclerView = findViewById(R.id.recycler_view);
+        context = MainAsian.this;
 
         //RestaurantDatabase rdb = Room.databaseBuilder(getApplicationContext(), RestaurantDatabase.class, "restaurant_db").allowMainThreadQueries().build();
 
@@ -33,8 +36,8 @@ public class MainAsian extends AppCompatActivity {
         //restaurants.add(new Restaurants("Line 3", "Line 2", "","","","","","","",""));
         //restaurants.add(new Restaurants("Line 4", "Line 2", "","","","","","","",""));
 
-        recyclerView.setLayoutManager(new LinearLayoutManager(this));
-        adapter = new RestaurantAdapter(restaurants);
+        recyclerView.setLayoutManager(new LinearLayoutManager(context));
+        adapter = new RestaurantAdapter(restaurants,context);
         recyclerView.setAdapter(adapter);
     }
 }
