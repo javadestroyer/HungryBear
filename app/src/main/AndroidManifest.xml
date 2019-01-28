@@ -9,6 +9,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".MainAllMenusActivity"></activity>
+        <activity android:name=".MainSteakActivity" />
+        <activity android:name=".MainFishActivity" />
+        <activity android:name=".MainSaladActivity" />
+        <activity android:name=".MainDoenerActivity" />
+        <activity android:name=".MainAsianActivity" />
+        <activity android:name=".MainBaguetteActivity" />
+        <activity android:name=".MainItalianActivity" />
+        <activity android:name=".MainBurgerActivity" />
+        <activity android:name=".Main2Activity" />
         <activity android:name=".Splash">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -27,7 +37,7 @@
         <activity android:name=".SaladView" />
         <activity android:name=".FishView" />
         <activity android:name=".SteakView" />
-        <activity android:name=".AllView"></activity>
+        <activity android:name=".AllView" />
     </application>
 
 </manifest>
