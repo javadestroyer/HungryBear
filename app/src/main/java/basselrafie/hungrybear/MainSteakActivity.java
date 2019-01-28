@@ -14,6 +14,7 @@ public class MainSteakActivity extends AppCompatActivity {
         for (int i=0; i<MainActivity.categories.size();i++){
             if (MainActivity.categories.get(i).getSteak()==true){
 
+
             }
         }
     }
