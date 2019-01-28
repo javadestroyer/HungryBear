@@ -3,6 +3,7 @@ package basselrafie.hungrybear;
 import android.arch.persistence.room.Room;
 import android.content.Context;
 import android.content.Intent;
+import android.database.Cursor;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -12,6 +13,7 @@ import android.widget.Toast;
 
 import java.io.File;
 import java.util.ArrayList;
+import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -29,14 +31,25 @@ public class MainActivity extends AppCompatActivity {
 
 
     public static ArrayList <MainRestaurants> categories = new ArrayList<MainRestaurants>();
-
-
-
+    RestaurantDatabase restaurantDatabase;
+    Context context;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        restaurantDatabase = Room.databaseBuilder(getApplicationContext(),RestaurantDatabase.class, "restaurantdb").allowMainThreadQueries().build();
+
+
+        Restaurants restaurants1 = new Restaurants("199", "Test","true","true","true","true","true","true","true","true","true","Test","0","38678","Clausthal-Zellerfeld","05323","11:00","13:00");
+        Restaurants restaurants2 = new Restaurants("19", "Test","true","true","true","true","true","true","true","true","true","Test","0","38678","Clausthal-Zellerfeld","05323","11:00","13:00");
+        restaurantDatabase.dao().deleteRestaurant(restaurants1);
+        restaurantDatabase.dao().addRestaurant(restaurants1);
+        restaurantDatabase.dao().deleteRestaurant(restaurants2);
+        restaurantDatabase.dao().addRestaurant(restaurants2);
+
+
         burger = findViewById(R.id.burger);
         pizza = findViewById(R.id.pizza);
         italian = findViewById(R.id.italian);
@@ -48,6 +61,10 @@ public class MainActivity extends AppCompatActivity {
         steak = findViewById(R.id.steak);
         allMenus = findViewById(R.id.allMenus);
         Admin = findViewById(R.id.Bn_Admin);
+
+
+
+
 
         MainRestaurants euroDoener = new MainRestaurants();
         categories.add(euroDoener);

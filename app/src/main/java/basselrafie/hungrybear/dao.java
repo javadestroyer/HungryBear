@@ -11,8 +11,9 @@ import java.util.List;
 @Dao
 
 public interface dao {
+
     @Insert
-    public void addRestaurant(Restaurants restaurants);
+    public void addRestaurant(Restaurants... restaurants);
 
     @Query("SELECT * FROM restaurant")
     public List<Restaurants> getRestaurants();

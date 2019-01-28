@@ -14,7 +14,7 @@ import java.util.concurrent.Executors;
 @Database(entities = {Restaurants.class}, version = 1, exportSchema = false)
 public abstract class RestaurantDatabase extends RoomDatabase {
 
-    //private static RestaurantDatabase instance;
+    //private static RestaurantDatabase INSTANCE;
 
     public abstract dao dao();
 
@@ -42,8 +42,33 @@ public abstract class RestaurantDatabase extends RoomDatabase {
 
         @Override
         protected Void doInBackground(Void... voids){
-            dao.addRestaurant(new Restaurants("Test", "false","","","","","","","","","","","","","","",""));
+            dao.addRestaurant(new Restaurants("100", "Test","true","true","true","true","true","true","true","true","true","Test","0","38678","Clausthal-Zellerfeld","05323","11:00","13:00"));
+            //dao.addRestaurant(new Restaurants("1", "Euro Döner","","","","","","","","","","","","","","","",""));
+            //dao.addRestaurant(new Restaurants("2", "Ju Bin Lou","","","","","","","","","","","","","","","",""));
+            //dao.addRestaurant(new Restaurants("3", "Pizza Inn","","","","","","","","","","","","","","","",""));
             return null;
         }
+    }*/
+
+    /*public synchronized static RestaurantDatabase getInstance(Context context){
+        if(INSTANCE == null){
+            INSTANCE = buildDatabase(context);
+        }
+        return INSTANCE;
+    }
+
+    private static RestaurantDatabase buildDatabase(final Context context){
+        return Room.databaseBuilder(context, RestaurantDatabase.class, "restaurantdb").addCallback(new Callback() {
+            @Override
+            public void onCreate(@NonNull SupportSQLiteDatabase db) {
+                super.onCreate(db);
+                Executors.newSingleThreadExecutor().execute(new Runnable() {
+                    @Override
+                    public void run() {
+                        getInstance(context).dao().addRestaurant(Restaurants.populateData());
+                    }
+                });
+            }
+        }).build();
     }*/
 }

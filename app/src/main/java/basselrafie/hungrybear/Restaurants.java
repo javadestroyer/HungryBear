@@ -4,13 +4,15 @@ package basselrafie.hungrybear;
 import android.arch.persistence.room.ColumnInfo;
 import android.arch.persistence.room.Entity;
 import android.arch.persistence.room.PrimaryKey;
+import android.support.annotation.NonNull;
 
 @Entity(tableName = "Restaurant")
 public class Restaurants {
 
-    public Restaurants(String rname, String rdoener, String rpizza, String ritalian, String rasian, String rsteak, String rburger, String rbaguette,
+    public Restaurants(@NonNull String rid, String rname, String rdoener, String rpizza, String ritalian, String rasian, String rsteak, String rburger, String rbaguette,
                        String rsalat, String rfish, String rstraße, String rhausnr, String rplz, String rort, String rtelefon, String rvon, String rbis) {
 
+        this.rid = rid;
         this.rname = rname;
         this.rdoener = rdoener;
         this.rpizza = rpizza;
@@ -32,7 +34,7 @@ public class Restaurants {
 
     @ColumnInfo(name = "RestaurantId")
     @PrimaryKey
-    private int rid;
+    @NonNull private String rid;
 
     @ColumnInfo(name = "RestaurantName")
     private String rname;
@@ -85,11 +87,11 @@ public class Restaurants {
     @ColumnInfo(name = "ÖffnungszeitB")
     private String rbis;
 
-    public int getRid() {
+    public String getRid() {
         return rid;
     }
 
-    public void setRid(int rid) {
+    public void setRid(String rid) {
         this.rid = rid;
     }
 
@@ -227,6 +229,12 @@ public class Restaurants {
 
     public void setRbis(String rbis) {
         this.rbis = rbis;
+    }
+
+    public static Restaurants[] populateData(){
+        return new Restaurants[]{
+                new Restaurants("100", "Test","true","true","true","true","true","true","true","true","true","Test","0","38678","Clausthal-Zellerfeld","05323","11:00","13:00")
+        };
     }
 
 }

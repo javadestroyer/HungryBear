@@ -37,7 +37,7 @@ public class ViewRestaurantFragment extends Fragment {
 
         for(Restaurants rest : restaurants)
         {
-            int rid = rest.getRid();
+            String rid = rest.getRid();
             String rname = rest.getRname();
             String rstraße = rest.getRstraße();
             String rhausnr = rest.getRhausnr();

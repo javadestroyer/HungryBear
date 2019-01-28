@@ -59,7 +59,7 @@ public class AddRestaurantFragment extends Fragment {
         BnRSave.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                int rid = Integer.parseInt(RId.getText().toString());
+                String rid = RId.getText().toString();
                 String rname = RName.getText().toString();
                 String rstraße = RStraße.getText().toString();
                 String rhausnr = RHausNr.getText().toString();
@@ -81,9 +81,9 @@ public class AddRestaurantFragment extends Fragment {
 
 
                 //neues Restaurant anlegen
-                Restaurants restaurants = new Restaurants(rname,rdoener,rpizza,ritalian,rasian,rsteak,rburger,rbaguette,rsalad,rfish,rstraße,rhausnr,rplz,rort,rtelefon,rvon,rbis);
-                restaurants.setRid(rid);
-                /*restaurants.setRname(rname);
+                Restaurants restaurants = new Restaurants(rid,rname,rdoener,rpizza,ritalian,rasian,rsteak,rburger,rbaguette,rsalad,rfish,rstraße,rhausnr,rplz,rort,rtelefon,rvon,rbis);
+                /*restaurants.setRid(rid);
+                restaurants.setRname(rname);
                 restaurants.setRdoener(rdoener);
                 restaurants.setRpizza(rpizza);
                 restaurants.setRitalian(ritalian);
