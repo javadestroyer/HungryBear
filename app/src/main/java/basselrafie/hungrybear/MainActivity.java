@@ -48,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
         pizza.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent2 = new Intent(MainActivity.this, PizzaView.class);
+                Intent intent2 = new Intent(MainActivity.this, MainPizza.class);
                 startActivity(intent2);
             }
         });
@@ -56,7 +56,7 @@ public class MainActivity extends AppCompatActivity {
         burger.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent2 = new Intent(MainActivity.this, BurgerView.class);
+                Intent intent2 = new Intent(MainActivity.this, MainBurger.class);
                 startActivity(intent2);
             }
         });
@@ -64,7 +64,7 @@ public class MainActivity extends AppCompatActivity {
         italian.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent2 = new Intent(MainActivity.this, ItalianView.class);
+                Intent intent2 = new Intent(MainActivity.this, MainItalian.class);
                 startActivity(intent2);
             }
         });
@@ -72,7 +72,7 @@ public class MainActivity extends AppCompatActivity {
         baguette.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent2 = new Intent(MainActivity.this, BaguetteView.class);
+                Intent intent2 = new Intent(MainActivity.this, MainBaguette.class);
                 startActivity(intent2);
             }
         });
@@ -80,7 +80,7 @@ public class MainActivity extends AppCompatActivity {
         asian.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent2 = new Intent(MainActivity.this, AsianView.class);
+                Intent intent2 = new Intent(MainActivity.this, MainAsian.class);
                 startActivity(intent2);
             }
         });
@@ -88,7 +88,7 @@ public class MainActivity extends AppCompatActivity {
         doener.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent iDoener = new Intent(MainActivity.this, DoenerView.class);
+                Intent iDoener = new Intent(MainActivity.this, MainDoener.class);
                 startActivity(iDoener);
             }
         });
@@ -96,7 +96,7 @@ public class MainActivity extends AppCompatActivity {
         salad.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent2 = new Intent(MainActivity.this, SaladView.class);
+                Intent intent2 = new Intent(MainActivity.this, MainSalad.class);
                 startActivity(intent2);
             }
         });
@@ -104,7 +104,7 @@ public class MainActivity extends AppCompatActivity {
         fish.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent2 = new Intent(MainActivity.this, FishView.class);
+                Intent intent2 = new Intent(MainActivity.this, MainFish.class);
                 startActivity(intent2);
             }
         });
@@ -112,7 +112,7 @@ public class MainActivity extends AppCompatActivity {
         steak.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent2 = new Intent(MainActivity.this, SteakView.class);
+                Intent intent2 = new Intent(MainActivity.this, MainSteak.class);
                 startActivity(intent2);
             }
         });
@@ -120,7 +120,7 @@ public class MainActivity extends AppCompatActivity {
         allMenus.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent2 = new Intent(MainActivity.this, AllView.class);
+                Intent intent2 = new Intent(MainActivity.this, MainViewAll.class);
                 startActivity(intent2);
             }
         });

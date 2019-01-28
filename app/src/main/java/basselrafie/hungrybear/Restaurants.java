@@ -8,6 +8,19 @@ import android.arch.persistence.room.PrimaryKey;
 @Entity(tableName = "Restaurant")
 public class Restaurants {
 
+    public Restaurants(String rname, String rdoener, String rpizza, String ritalian, String rasian, String rsteak, String rburger, String rbaguette, String rsalat, String rfish) {
+        this.rname = rname;
+        this.rdoener = rdoener;
+        this.rpizza = rpizza;
+        this.ritalian = ritalian;
+        this.rasian = rasian;
+        this.rsteak = rsteak;
+        this.rburger = rburger;
+        this.rbaguette = rbaguette;
+        this.rsalat = rsalat;
+        this.rfish = rfish;
+    }
+
     @ColumnInfo(name = "RestaurantId")
     @PrimaryKey
     private int rid;
