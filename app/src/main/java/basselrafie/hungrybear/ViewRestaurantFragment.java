@@ -56,7 +56,7 @@ public class ViewRestaurantFragment extends Fragment {
             String rfish = rest.getRfish();
             String rsteak = rest.getRsteak();
 
-            info = info + "\n\nId: " + rid + "Restaurant: " + rname +
+            info = info + "\n\nId: " + rid + " | Restaurant: " + rname +
                     "\nPizza: " + rpizza + " | Burger: " + rburger + " | Italian: " + ritalian +
                     "\nBaguette: " + rbaguette + " | Asian: " + rasian + " | Döner: " + rdoener +
                     "\nSalad: " + rsalad + " | Fish: " + rfish + " | Steak: " + rsteak +

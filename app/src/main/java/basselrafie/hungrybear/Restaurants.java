@@ -228,4 +228,5 @@ public class Restaurants {
     public void setRbis(String rbis) {
         this.rbis = rbis;
     }
+
 }
