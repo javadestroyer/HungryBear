@@ -4,13 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainPizzaActivity">
+    tools:context=".MainAllMenusActivity">
 
     <TextView
-        android:id="@+id/textView14"
+        android:id="@+id/textView13"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Pizza Activity"
-        tools:layout_editor_absoluteX="93dp"
-        tools:layout_editor_absoluteY="170dp" />
+        android:text="allMenus"
+        tools:layout_editor_absoluteX="80dp"
+        tools:layout_editor_absoluteY="136dp" />
 </android.support.constraint.ConstraintLayout>

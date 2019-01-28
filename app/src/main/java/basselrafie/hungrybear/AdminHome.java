@@ -22,6 +22,7 @@ public class AdminHome extends AppCompatActivity {
             if(savedInstanceState!=null)
             {
                 return;
+
             }
 
             fragmentManager.beginTransaction().add(R.id.fragment_container, new HomeFragment()).commit();

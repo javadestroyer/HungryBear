@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="@android:color/white">
 
 
     <ImageButton
@@ -26,7 +27,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.223"
-        app:srcCompat="@drawable/burger" />
+        app:srcCompat="@drawable/burger"
+        android:background="@android:color/white"/>
 
     <ImageButton
         android:id="@+id/pizza"
@@ -46,7 +48,9 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.223"
-        app:srcCompat="@drawable/pizza" />
+        app:srcCompat="@drawable/pizza"
+        android:background="@android:color/white"
+        />
 
     <ImageButton
         android:id="@+id/italian"
@@ -65,7 +69,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.223"
-        app:srcCompat="@drawable/calzone" />
+        app:srcCompat="@drawable/italian"
+        android:background="@android:color/white"/>
 
     <ImageButton
         android:id="@+id/baguette"
@@ -85,7 +90,8 @@
         app:layout_constraintHorizontal_bias="0.033"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/baguette" />
+        app:srcCompat="@drawable/baguette"
+        android:background="@android:color/white"/>
 
     <ImageButton
         android:id="@+id/asian"
@@ -104,7 +110,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/asian" />
+        app:srcCompat="@drawable/asian"
+        android:background="@android:color/white"/>
 
     <ImageButton
         android:id="@+id/doener"
@@ -124,7 +131,8 @@
         app:layout_constraintHorizontal_bias="0.969"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/doener" />
+        app:srcCompat="@drawable/doener"
+        android:background="@android:color/white"/>
 
     <ImageButton
         android:id="@+id/salad"
@@ -145,7 +153,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.78"
-        app:srcCompat="@drawable/salad" />
+        app:srcCompat="@drawable/salad"
+        android:background="@android:color/white"/>
 
     <ImageButton
         android:id="@+id/fish"
@@ -164,7 +173,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.78"
-        app:srcCompat="@drawable/fish" />
+        app:srcCompat="@drawable/fish"
+        android:background="@android:color/white"/>
 
     <ImageButton
         android:id="@+id/steak"
@@ -185,7 +195,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.78"
-        app:srcCompat="@drawable/steak" />
+        app:srcCompat="@drawable/steak"
+        android:background="@android:color/white"/>
 
     <TextView
         android:id="@+id/textView"
@@ -197,7 +208,7 @@
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
         android:includeFontPadding="false"
-        android:text="Was möchtest du essen?"
+        android:text="was möchtest du essen?"
         android:textColor="@color/colorPrimaryDark"
         android:textSize="24sp"
         android:textStyle="bold|italic"
@@ -216,7 +227,7 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
-        android:text="Alle Speisekarte Anzeigen"
+        android:text="Alle Speisekarten anzeigen"
         android:textColor="@color/colorPrimaryDark"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -224,11 +235,11 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.95" />
 
-    <Button
+    <ImageButton
         android:id="@+id/Bn_Admin"
-        android:layout_width="55dp"
-        android:layout_height="33dp"
-        android:text="Admin"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@android:drawable/ic_menu_manage" />
 </android.support.constraint.ConstraintLayout>

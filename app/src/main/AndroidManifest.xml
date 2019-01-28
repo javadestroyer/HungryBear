@@ -9,16 +9,17 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainViewAll"></activity>
-        <activity android:name=".MainDoener" />
-        <activity android:name=".MainPizza" />
-        <activity android:name=".MainItalian" />
-        <activity android:name=".MainAsian" />
-        <activity android:name=".MainSteak" />
-        <activity android:name=".MainBurger" />
-        <activity android:name=".MainBaguette" />
-        <activity android:name=".MainSalad" />
-        <activity android:name=".MainFish" />
+        <activity android:name=".MainPizzaActivity"></activity>
+        <activity android:name=".MainAllMenusActivity" />
+        <activity android:name=".MainSteakActivity" />
+        <activity android:name=".MainFishActivity" />
+        <activity android:name=".MainSaladActivity" />
+        <activity android:name=".MainDoenerActivity" />
+        <activity android:name=".MainAsianActivity" />
+        <activity android:name=".MainBaguetteActivity" />
+        <activity android:name=".MainItalianActivity" />
+        <activity android:name=".MainBurgerActivity" />
+        <activity android:name=".Main2Activity" />
         <activity android:name=".Splash">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -28,6 +29,16 @@
         </activity>
         <activity android:name=".MainActivity" />
         <activity android:name=".AdminHome" />
+        <activity android:name=".DoenerView" />
+        <activity android:name=".PizzaView" />
+        <activity android:name=".BurgerView" />
+        <activity android:name=".ItalianView" />
+        <activity android:name=".BaguetteView" />
+        <activity android:name=".AsianView" />
+        <activity android:name=".SaladView" />
+        <activity android:name=".FishView" />
+        <activity android:name=".SteakView" />
+        <activity android:name=".AllView" />
     </application>
 
 </manifest>

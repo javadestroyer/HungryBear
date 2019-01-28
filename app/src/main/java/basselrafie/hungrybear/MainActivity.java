@@ -7,6 +7,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
 
+import java.util.ArrayList;
+
 public class MainActivity extends AppCompatActivity {
 
     ImageButton burger;
@@ -19,7 +21,13 @@ public class MainActivity extends AppCompatActivity {
     ImageButton fish;
     ImageButton steak;
     Button allMenus;
-    Button Admin;
+    ImageButton Admin;
+
+
+    public static ArrayList <MainRestaurants> categories = new ArrayList<MainRestaurants>();
+
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,6 +45,66 @@ public class MainActivity extends AppCompatActivity {
         allMenus = findViewById(R.id.allMenus);
         Admin = findViewById(R.id.Bn_Admin);
 
+        MainRestaurants euroDoener = new MainRestaurants();
+        categories.add(euroDoener);
+        euroDoener.setBaguette(false);
+        euroDoener.setAsian(false);
+        euroDoener.setBurger(true);
+        euroDoener.setDoener(true);
+        euroDoener.setFish(false);
+        euroDoener.setPizza(true);
+        euroDoener.setSalad(true);
+        euroDoener.setSteak(false);
+        euroDoener.setItalian(true);
+        euroDoener.setRestaurantName("Euro Döner");
+        euroDoener.setOpeningTimes("10-22");
+
+
+
+        MainRestaurants pizzaInn = new MainRestaurants();
+        categories.add(pizzaInn);
+        pizzaInn.setBaguette(true);
+        pizzaInn.setAsian(false);
+        pizzaInn.setBurger(false);
+        pizzaInn.setDoener(false);
+        pizzaInn.setFish(false);
+        pizzaInn.setPizza(true);
+        pizzaInn.setSalad(false);
+        pizzaInn.setSteak(false);
+        pizzaInn.setItalian(true);
+        pizzaInn.setRestaurantName("Pizza Inn");
+        pizzaInn.setOpeningTimes("10-22");
+
+        MainRestaurants juBinLou = new MainRestaurants();
+        categories.add(juBinLou);
+        juBinLou.setBaguette(false);
+        juBinLou.setAsian(true);
+        juBinLou.setBurger(false);
+        juBinLou.setDoener(false);
+        juBinLou.setFish(true);
+        juBinLou.setPizza(false);
+        juBinLou.setSalad(true);
+        juBinLou.setSteak(false);
+        juBinLou.setItalian(false);
+        juBinLou.setRestaurantName("Ju Bin Lou");
+        juBinLou.setOpeningTimes("10-22");
+
+
+        MainRestaurants daMario = new MainRestaurants();
+        categories.add(daMario);
+        daMario.setBaguette(false);
+        daMario.setAsian(false);
+        daMario.setBurger(true);
+        daMario.setDoener(false);
+        daMario.setFish(true);
+        daMario.setPizza(true);
+        daMario.setSalad(true);
+        daMario.setSteak(true);
+        daMario.setItalian(true);
+        daMario.setRestaurantName("Da Mario");
+        daMario.setOpeningTimes("10-22");
+
+
         Admin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -48,15 +116,16 @@ public class MainActivity extends AppCompatActivity {
         pizza.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent2 = new Intent(MainActivity.this, MainPizza.class);
+                Intent intent2 = new Intent(MainActivity.this, MainPizzaActivity.class);
                 startActivity(intent2);
+
             }
         });
 
         burger.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent2 = new Intent(MainActivity.this, MainBurger.class);
+                Intent intent2 = new Intent(MainActivity.this, MainBurgerActivity.class);
                 startActivity(intent2);
             }
         });
@@ -64,7 +133,7 @@ public class MainActivity extends AppCompatActivity {
         italian.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent2 = new Intent(MainActivity.this, MainItalian.class);
+                Intent intent2 = new Intent(MainActivity.this, MainItalianActivity.class);
                 startActivity(intent2);
             }
         });
@@ -72,7 +141,7 @@ public class MainActivity extends AppCompatActivity {
         baguette.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent2 = new Intent(MainActivity.this, MainBaguette.class);
+                Intent intent2 = new Intent(MainActivity.this, MainBaguetteActivity.class);
                 startActivity(intent2);
             }
         });
@@ -80,7 +149,7 @@ public class MainActivity extends AppCompatActivity {
         asian.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent2 = new Intent(MainActivity.this, MainAsian.class);
+                Intent intent2 = new Intent(MainActivity.this, MainAsianActivity.class);
                 startActivity(intent2);
             }
         });
@@ -88,7 +157,7 @@ public class MainActivity extends AppCompatActivity {
         doener.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent iDoener = new Intent(MainActivity.this, MainDoener.class);
+                Intent iDoener = new Intent(MainActivity.this, MainDoenerActivity.class);
                 startActivity(iDoener);
             }
         });
@@ -96,7 +165,7 @@ public class MainActivity extends AppCompatActivity {
         salad.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent2 = new Intent(MainActivity.this, MainSalad.class);
+                Intent intent2 = new Intent(MainActivity.this, MainSaladActivity.class);
                 startActivity(intent2);
             }
         });
@@ -104,7 +173,7 @@ public class MainActivity extends AppCompatActivity {
         fish.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent2 = new Intent(MainActivity.this, MainFish.class);
+                Intent intent2 = new Intent(MainActivity.this, MainFishActivity.class);
                 startActivity(intent2);
             }
         });
@@ -112,7 +181,7 @@ public class MainActivity extends AppCompatActivity {
         steak.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent2 = new Intent(MainActivity.this, MainSteak.class);
+                Intent intent2 = new Intent(MainActivity.this, MainSteakActivity.class);
                 startActivity(intent2);
             }
         });
@@ -120,7 +189,7 @@ public class MainActivity extends AppCompatActivity {
         allMenus.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent2 = new Intent(MainActivity.this, MainViewAll.class);
+                Intent intent2 = new Intent(MainActivity.this, MainAllMenusActivity.class);
                 startActivity(intent2);
             }
         });
