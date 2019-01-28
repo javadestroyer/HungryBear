@@ -60,7 +60,7 @@ public class ViewRestaurantFragment extends Fragment {
                     "\nPizza: " + rpizza + " | Burger: " + rburger + " | Italian: " + ritalian +
                     "\nBaguette: " + rbaguette + " | Asian: " + rasian + " | Döner: " + rdoener +
                     "\nSalad: " + rsalad + " | Fish: " + rfish + " | Steak: " + rsteak +
-                    "Adresse: " + rstraße + " " + rhausnr + ",\n " + rplz + " " + rort +
+                    "\nAdresse: " + rstraße + " " + rhausnr + ",\n " + rplz + " " + rort +
                     "Telefon: " + rtelefon + " | Geöffnet von " + rvon + " bis " + rbis;
         }
 
