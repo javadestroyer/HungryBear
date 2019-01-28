@@ -17,7 +17,7 @@ import android.widget.Toast;
  */
 public class AddRestaurantFragment extends Fragment {
 
-    private EditText RId, RName;
+    private EditText RId, RName, RStraße, RHausNr, Rplz, ROrt, RTelefon, RVon, RBis;
     private CheckBox RDoener, RPizza, RItalian, RAsian, RSteak, RBurger, RBaguette, RSalad, RFish;
     private Button BnRSave;
 
@@ -36,6 +36,13 @@ public class AddRestaurantFragment extends Fragment {
 
         RId = view.findViewById(R.id.txt_rid);
         RName = view.findViewById(R.id.txt_rname);
+        RStraße = view.findViewById(R.id.txt_rstraße);
+        RHausNr = view.findViewById(R.id.txt_rhausnr);
+        Rplz = view.findViewById(R.id.txt_rplz);
+        ROrt = view.findViewById(R.id.txt_rort);
+        RTelefon = view.findViewById(R.id.txt_rtelefon);
+        RVon = view.findViewById(R.id.txt_rvon);
+        RBis = view.findViewById(R.id.txt_rbis);
         RDoener = view.findViewById(R.id.cb_doener);
         RPizza = view.findViewById(R.id.cb_pizza);
         RItalian = view.findViewById(R.id.cb_italian);
@@ -46,6 +53,7 @@ public class AddRestaurantFragment extends Fragment {
         RSalad = view.findViewById(R.id.cb_salad);
         RFish = view.findViewById(R.id.cb_fish);
 
+
         BnRSave = view.findViewById(R.id.bn_save_restaurant);
 
         BnRSave.setOnClickListener(new View.OnClickListener() {
@@ -53,6 +61,13 @@ public class AddRestaurantFragment extends Fragment {
             public void onClick(View v) {
                 int rid = Integer.parseInt(RId.getText().toString());
                 String rname = RName.getText().toString();
+                String rstraße = RStraße.getText().toString();
+                String rhausnr = RHausNr.getText().toString();
+                String rplz = Rplz.getText().toString();
+                String rort = ROrt.getText().toString();
+                String rtelefon = RTelefon.getText().toString();
+                String rvon = RVon.getText().toString();
+                String rbis = RBis.getText().toString();
                 String rdoener = String.valueOf(RDoener.isChecked());
                 String rpizza = String.valueOf(RPizza.isChecked());
                 String ritalian = String.valueOf(RItalian.isChecked());
@@ -64,8 +79,9 @@ public class AddRestaurantFragment extends Fragment {
                 String rfish = String.valueOf(RFish.isChecked());
 
 
+
                 //neues Restaurant anlegen
-                Restaurants restaurants = new Restaurants(rname,rdoener,rpizza,ritalian,rasian,rsteak,rburger,rbaguette,rsalad,rfish);
+                Restaurants restaurants = new Restaurants(rname,rdoener,rpizza,ritalian,rasian,rsteak,rburger,rbaguette,rsalad,rfish,rstraße,rhausnr,rplz,rort,rtelefon,rvon,rbis);
                 restaurants.setRid(rid);
                 /*restaurants.setRname(rname);
                 restaurants.setRdoener(rdoener);
@@ -85,6 +101,11 @@ public class AddRestaurantFragment extends Fragment {
                 //Inhalte der Variablen löschen
                 RId.setText("");
                 RName.setText("");
+                RStraße.setText("");
+                RHausNr.setText("");
+                RTelefon.setText("");
+                RVon.setText("");
+                RBis.setText("");
                 RDoener.setChecked(false);
                 RPizza.setChecked(false);
                 RItalian.setChecked(false);

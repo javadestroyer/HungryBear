@@ -27,15 +27,13 @@
         android:id="@+id/txt_rid"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="40dp"
-        android:ems="10"
-        android:hint="Restaurant Id"
+        android:layout_marginTop="32dp"
+        android:ems="4"
+        android:hint="ID"
         android:inputType="textPersonName|number"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtUpdateRestaurant"/>
+        app:layout_constraintTop_toBottomOf="@+id/txtUpdateRestaurant" />
 
     <EditText
         android:id="@+id/txt_rname"
@@ -47,9 +45,118 @@
         android:ems="10"
         android:hint="Restaurant Name"
         android:inputType="textPersonName"
+        app:layout_constraintEnd_toStartOf="@id/txt_rid"
+        app:layout_constraintTop_toBottomOf="@id/txtUpdateRestaurant"/>
+
+    <EditText
+        android:id="@+id/txt_rstraße"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="18dp"
+        android:ems="10"
+        android:hint="Straße"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toStartOf="@id/txt_rid"
+        app:layout_constraintTop_toBottomOf="@+id/txt_rname"/>
+
+    <EditText
+        android:id="@+id/txt_rhausnr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="18dp"
+        android:ems="4"
+        android:hint="Nr."
+        android:inputType="textPersonName|number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_rid" />
+
+    <EditText
+        android:id="@+id/txt_rort"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="18dp"
+        android:ems="10"
+        android:text="Clausthal-Zellerfeld"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toStartOf="@id/txt_rhausnr"
+        app:layout_constraintTop_toBottomOf="@+id/txt_rstraße"/>
+
+    <EditText
+        android:id="@+id/txt_rplz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="18dp"
+        android:ems="4"
+        android:text="38678"
+        android:inputType="textPersonName|number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_rhausnr" />
+
+    <TextView
+        android:id="@+id/txt_offen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Öffnungszeiten: "
+        android:textSize="18sp"
+        android:layout_marginTop="18dp"
+        app:layout_constraintTop_toBottomOf="@+id/txt_rort"
+        app:layout_constraintEnd_toStartOf="@id/txt_rvon"/>
+
+    <EditText
+        android:id="@+id/txt_rvon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="6dp"
+        android:ems="4"
+        android:hint="Von"
+        android:inputType="textPersonName|time"
+        app:layout_constraintEnd_toStartOf="@id/txt_minus"
+        app:layout_constraintTop_toBottomOf="@+id/txt_rplz" />
+
+    <TextView
+        android:id="@+id/txt_minus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:layout_marginTop="18dp"
+        android:text="-"
+        app:layout_constraintEnd_toStartOf="@id/txt_rbis"
+        app:layout_constraintTop_toBottomOf="@id/txt_rplz"/>
+
+    <EditText
+        android:id="@+id/txt_rbis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="6dp"
+        android:ems="4"
+        android:hint="Bis"
+        android:inputType="textPersonName|time"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_rplz" />
+
+    <EditText
+        android:id="@+id/txt_rtelefon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="18dp"
+        android:ems="10"
+        android:hint="Telefonnummer"
+        android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txt_rid"/>
+        app:layout_constraintTop_toBottomOf="@+id/txt_offen"/>
+
+
 
     <CheckBox
         android:id="@+id/cb_pizza"
@@ -59,7 +166,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="32dp"
         android:text="Pizza"
-        app:layout_constraintTop_toBottomOf="@+id/txt_rname"
+        app:layout_constraintTop_toBottomOf="@+id/txt_rtelefon"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
 
@@ -95,7 +202,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="32dp"
         android:text="Döner"
-        app:layout_constraintTop_toBottomOf="@id/txt_rname"
+        app:layout_constraintTop_toBottomOf="@id/txt_rtelefon"
         app:layout_constraintEnd_toStartOf="@id/cb_pizza"/>
 
     <CheckBox
@@ -128,7 +235,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="32dp"
         android:text="Italienisch"
-        app:layout_constraintTop_toBottomOf="@id/txt_rname"
+        app:layout_constraintTop_toBottomOf="@id/txt_rtelefon"
         app:layout_constraintStart_toEndOf="@id/cb_pizza"/>
 
     <CheckBox

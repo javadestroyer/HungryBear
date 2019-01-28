@@ -45,8 +45,22 @@ class RestaurantAdapter extends RecyclerView.Adapter<RestaurantAdapter.ViewHolde
                 Intent i = new Intent(context, DisplayRestaurant.class);
                 String rid = String.valueOf(restaurant.getRid());
                 String rname = restaurant.getRname();
+                String rstraße = restaurant.getRstraße();
+                String rhausnr = restaurant.getRhausnr();
+                String rplz = restaurant.getRplz();
+                String rtelefon = restaurant.getRtelefon();
+                String rvon = restaurant.getRvon();
+                String rbis = restaurant.getRbis();
+
                 i.putExtra("RId", rid);
                 i.putExtra("RName", rname);
+                i.putExtra("RStraße", rstraße);
+                i.putExtra("RHausNr", rhausnr);
+                i.putExtra("Rplz", rplz);
+                i.putExtra("RTelefon", rtelefon);
+                i.putExtra("RVon", rvon);
+                i.putExtra("RBis", rbis);
+
                 context.startActivity(i);
             }
         });

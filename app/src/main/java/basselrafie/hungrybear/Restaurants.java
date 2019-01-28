@@ -8,7 +8,9 @@ import android.arch.persistence.room.PrimaryKey;
 @Entity(tableName = "Restaurant")
 public class Restaurants {
 
-    public Restaurants(String rname, String rdoener, String rpizza, String ritalian, String rasian, String rsteak, String rburger, String rbaguette, String rsalat, String rfish) {
+    public Restaurants(String rname, String rdoener, String rpizza, String ritalian, String rasian, String rsteak, String rburger, String rbaguette,
+                       String rsalat, String rfish, String rstraße, String rhausnr, String rplz, String rort, String rtelefon, String rvon, String rbis) {
+
         this.rname = rname;
         this.rdoener = rdoener;
         this.rpizza = rpizza;
@@ -19,6 +21,13 @@ public class Restaurants {
         this.rbaguette = rbaguette;
         this.rsalat = rsalat;
         this.rfish = rfish;
+        this.rstraße = rstraße;
+        this.rhausnr = rhausnr;
+        this.rplz = rplz;
+        this.rort = rort;
+        this.rtelefon = rtelefon;
+        this.rvon = rvon;
+        this.rbis = rbis;
     }
 
     @ColumnInfo(name = "RestaurantId")
@@ -55,7 +64,26 @@ public class Restaurants {
     @ColumnInfo(name = "Fisch")
     private String rfish;
 
+    @ColumnInfo(name = "Straße")
+    private String rstraße;
 
+    @ColumnInfo(name = "HausNr")
+    private String rhausnr;
+
+    @ColumnInfo(name = "PLZ")
+    private String rplz;
+
+    @ColumnInfo(name = "Ort")
+    private String rort;
+
+    @ColumnInfo(name = "TelefonNr")
+    private String rtelefon;
+
+    @ColumnInfo(name = "ÖffnungszeitV")
+    private String rvon;
+
+    @ColumnInfo(name = "ÖffnungszeitB")
+    private String rbis;
 
     public int getRid() {
         return rid;
@@ -71,10 +99,6 @@ public class Restaurants {
 
     public void setRname(String rname) {
         this.rname = rname;
-    }
-
-    public String getRsalat() {
-        return rsalat;
     }
 
     public String getRdoener() {
@@ -133,6 +157,14 @@ public class Restaurants {
         this.rbaguette = rbaguette;
     }
 
+    public String getRsalat() {
+        return rsalat;
+    }
+
+    public void setRsalat(String rsalat) {
+        this.rsalat = rsalat;
+    }
+
     public String getRfish() {
         return rfish;
     }
@@ -141,7 +173,59 @@ public class Restaurants {
         this.rfish = rfish;
     }
 
-    public void setRsalat(String rsalat) {
-        this.rsalat = rsalat;
+    public String getRstraße() {
+        return rstraße;
+    }
+
+    public void setRstraße(String rstraße) {
+        this.rstraße = rstraße;
+    }
+
+    public String getRhausnr() {
+        return rhausnr;
+    }
+
+    public void setRhausnr(String rhausnr) {
+        this.rhausnr = rhausnr;
+    }
+
+    public String getRplz() {
+        return rplz;
+    }
+
+    public void setRplz(String rplz) {
+        this.rplz = rplz;
+    }
+
+    public String getRort() {
+        return rort;
+    }
+
+    public void setRort(String rort) {
+        this.rort = rort;
+    }
+
+    public String getRtelefon() {
+        return rtelefon;
+    }
+
+    public void setRtelefon(String rtelefon) {
+        this.rtelefon = rtelefon;
+    }
+
+    public String getRvon() {
+        return rvon;
+    }
+
+    public void setRvon(String rvon) {
+        this.rvon = rvon;
+    }
+
+    public String getRbis() {
+        return rbis;
+    }
+
+    public void setRbis(String rbis) {
+        this.rbis = rbis;
     }
 }

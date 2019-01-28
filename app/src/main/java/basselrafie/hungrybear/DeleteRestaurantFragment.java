@@ -37,7 +37,7 @@ public class DeleteRestaurantFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 int rid = Integer.parseInt(TxtRId.getText().toString());
-                Restaurants restaurants = new Restaurants("","","","","","","","","","");
+                Restaurants restaurants = new Restaurants("","","","","","","","","","","","","","","","","");
                 restaurants.setRid(rid);
 
                 AdminHome.restaurantDatabase.dao().deleteRestaurant(restaurants);

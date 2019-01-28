@@ -39,6 +39,13 @@ public class ViewRestaurantFragment extends Fragment {
         {
             int rid = rest.getRid();
             String rname = rest.getRname();
+            String rstraße = rest.getRstraße();
+            String rhausnr = rest.getRhausnr();
+            String rplz = rest.getRplz();
+            String rort = rest.getRort();
+            String rtelefon = rest.getRtelefon();
+            String rvon = rest.getRvon();
+            String rbis = rest.getRbis();
             String rpizza = rest.getRpizza();
             String rburger = rest.getRburger();
             String ritalian = rest.getRitalian();
@@ -49,10 +56,12 @@ public class ViewRestaurantFragment extends Fragment {
             String rfish = rest.getRfish();
             String rsteak = rest.getRsteak();
 
-            info = info + "\n\nId: " + rid + "\nRestaurant: " + rname +
+            info = info + "\n\nId: " + rid + "Restaurant: " + rname +
                     "\nPizza: " + rpizza + " | Burger: " + rburger + " | Italian: " + ritalian +
                     "\nBaguette: " + rbaguette + " | Asian: " + rasian + " | Döner: " + rdoener +
-                    "\nSalad: " + rsalad + " | Fish: " + rfish + " | Steak: " + rsteak;
+                    "\nSalad: " + rsalad + " | Fish: " + rfish + " | Steak: " + rsteak +
+                    "Adresse: " + rstraße + " " + rhausnr + ",\n " + rplz + " " + rort +
+                    "Telefon: " + rtelefon + " | Geöffnet von " + rvon + " bis " + rbis;
         }
 
         TxtInfo.setText(info);
