@@ -38,6 +38,8 @@ class RestaurantAdapter extends RecyclerView.Adapter<RestaurantAdapter.ViewHolde
 
         final Restaurants restaurant = restaurants.get(i);
         viewHolder.RName.setText(restaurant.getRname());
+        viewHolder.RTelefon.setText(restaurant.getRtelefon());
+        viewHolder.RAdresse.setText(restaurant.getRstraße() + " " + restaurant.getRhausnr() + ", " + restaurant.getRplz() + " " + restaurant.getRort());
 
         viewHolder.relativeLayout.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -73,12 +75,14 @@ class RestaurantAdapter extends RecyclerView.Adapter<RestaurantAdapter.ViewHolde
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder {
-        public TextView RName;
+        public TextView RName, RTelefon,RAdresse;
         public RelativeLayout relativeLayout;
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
             RName = itemView.findViewById(R.id.text_rname);
+            RTelefon = itemView.findViewById(R.id.text_rtelefon);
+            RAdresse = itemView.findViewById(R.id.text_radresse);
             relativeLayout = itemView.findViewById(R.id.relativeLayout);
 
         }

@@ -17,9 +17,46 @@
         <TextView
             android:id="@+id/text_rname"
             android:textSize="24sp"
+            android:textStyle="bold"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Hallo..."/>
+
+        <TextView
+            android:id="@+id/telefon"
+            android:textSize="18sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Telefon: "
+            android:layout_below="@+id/text_rname"
+            android:layout_marginStart="10dp"/>
+
+        <TextView
+            android:id="@+id/text_rtelefon"
+            android:textSize="18sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_rname"
+            android:layout_toEndOf="@+id/telefon"
+            android:text="Telefonnummer"/>
+
+        <TextView
+            android:id="@+id/adresse"
+            android:textSize="18sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Adresse: "
+            android:layout_below="@+id/telefon"
+            android:layout_marginStart="10dp"/>
+
+        <TextView
+            android:id="@+id/text_radresse"
+            android:textSize="18sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/telefon"
+            android:layout_toEndOf="@+id/adresse"
+            android:text="Adresse"/>
 
     </RelativeLayout>
 
