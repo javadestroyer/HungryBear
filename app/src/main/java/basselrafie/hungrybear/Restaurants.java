@@ -10,7 +10,7 @@ import android.support.annotation.NonNull;
 public class Restaurants {
 
     public Restaurants(@NonNull String rid, String rname, String rdoener, String rpizza, String ritalian, String rasian, String rsteak, String rburger, String rbaguette,
-                       String rsalat, String rfish, String rstraße, String rhausnr, String rplz, String rort, String rtelefon, String rvon, String rbis) {
+                       String rsalat, String rfish, String rstraße, String rhausnr, String rplz, String rort, String rtelefon, String rvon, String rbis, String rlink, String rbild) {
 
         this.rid = rid;
         this.rname = rname;
@@ -30,6 +30,8 @@ public class Restaurants {
         this.rtelefon = rtelefon;
         this.rvon = rvon;
         this.rbis = rbis;
+        this.rlink = rlink;
+        this.rbild = rbild;
     }
 
     @ColumnInfo(name = "RestaurantId")
@@ -86,6 +88,15 @@ public class Restaurants {
 
     @ColumnInfo(name = "ÖffnungszeitB")
     private String rbis;
+
+    @ColumnInfo(name = "MapsLink")
+    private String rlink;
+
+    @ColumnInfo(name = "BildQuelle")
+    private String rbild;
+
+    //@ColumnInfo(name = "ÖffnungszeitB")
+    //private String rbis;
 
     public String getRid() {
         return rid;
@@ -231,10 +242,19 @@ public class Restaurants {
         this.rbis = rbis;
     }
 
-    public static Restaurants[] populateData(){
-        return new Restaurants[]{
-                new Restaurants("100", "Test","true","true","true","true","true","true","true","true","true","Test","0","38678","Clausthal-Zellerfeld","05323","11:00","13:00")
-        };
+    public String getRlink() {
+        return rlink;
     }
 
+    public void setRlink(String rlink) {
+        this.rlink = rlink;
+    }
+
+    public String getRbild() {
+        return rbild;
+    }
+
+    public void setRbild(String rbild) {
+        this.rbild = rbild;
+    }
 }

@@ -16,7 +16,7 @@ import android.widget.Toast;
  * A simple {@link Fragment} subclass.
  */
 public class UpdateRestaurantFragment extends Fragment {
-    private EditText RId, RName, RStraße, RHausNr, Rplz, ROrt, RTelefon, RVon, RBis;
+    private EditText RId, RName, RStraße, RHausNr, Rplz, ROrt, RTelefon, RVon, RBis, RLink, RBild;
     private CheckBox RDoener, RPizza, RItalian, RAsian, RSteak, RBurger, RBaguette, RSalad, RFish;
     private Button BnUpdate;
 
@@ -50,6 +50,8 @@ public class UpdateRestaurantFragment extends Fragment {
         RBaguette = view.findViewById(R.id.cb_baguette);
         RSalad = view.findViewById(R.id.cb_salad);
         RFish = view.findViewById(R.id.cb_fish);
+        RLink = view.findViewById(R.id.txt_rlink);
+        RBild = view.findViewById(R.id.txt_rbild);
 
         BnUpdate = view.findViewById(R.id.bn_update);
 
@@ -74,8 +76,10 @@ public class UpdateRestaurantFragment extends Fragment {
                 String rbaguette = String.valueOf(RBaguette.isChecked());
                 String rsalad = String.valueOf(RSalad.isChecked());
                 String rfish = String.valueOf(RFish.isChecked());
+                String rlink = RLink.getText().toString();
+                String rbild = RBild.getText().toString();
 
-                Restaurants restaurants = new Restaurants(rid,rname,rdoener,rpizza,ritalian,rasian,rsteak,rburger,rbaguette,rsalad,rfish,rstraße,rhausnr,rplz,rort,rtelefon,rvon,rbis);
+                Restaurants restaurants = new Restaurants(rid,rname,rdoener,rpizza,ritalian,rasian,rsteak,rburger,rbaguette,rsalad,rfish,rstraße,rhausnr,rplz,rort,rtelefon,rvon,rbis,rlink,rbild);
                 /*restaurants.setRid(rid);
                 restaurants.setRname(rname);
                 restaurants.setRdoener(rdoener);
@@ -108,6 +112,8 @@ public class UpdateRestaurantFragment extends Fragment {
                 RBaguette.setChecked(false);
                 RSalad.setChecked(false);
                 RFish.setChecked(false);
+                RLink.setText("");
+                RBild.setText("");
             }
         });
 
