@@ -30,5 +30,6 @@
         <activity android:name=".MainFish" />
         <activity android:name=".MainPizza" />
     </application>
+    <uses-permission android:name="android.permission.CALL_PHONE"></uses-permission>
 
 </manifest>
