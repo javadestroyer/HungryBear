@@ -22,8 +22,9 @@ public class DisplayRestaurant extends AppCompatActivity {
         String data1 = extras.getString("RName");
         textView1.setText(data1);
 
-        String Text = extras.getString("RVon");
-        textView.setText(Text + " Uhr");
+        String UVon = extras.getString("RVon");
+        String UBis = extras.getString("RBis");
+        textView.setText(UVon + " Uhr - " + UBis + " Uhr");
 
     }
 
