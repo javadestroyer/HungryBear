@@ -45,6 +45,10 @@ public class MainActivity extends AppCompatActivity {
         Restaurants restaurants1 = new Restaurants("1", "Euro Döner","true","true","false","false","false","true","false","false","false","Adolph-Römer-Straße","7","38678","Clausthal-Zellerfeld","05323 840230","11:00","23:00");
         Restaurants restaurants2 = new Restaurants("2", "Pizza Inn","false","true","true","false","false","false","true","true","false","Adolph-Römer-Straße","21","38678","Clausthal-Zellerfeld","05323 982588","11:30","22:00");
         Restaurants restaurants3 = new Restaurants("3", "Ju Bin Lou","false","false","false","true","false","false","false","false","false","Schulstraße","47","38678","Clausthal-Zellerfeld","05323 7018421","11:30","22:00");
+        Restaurants restaurants4 = new Restaurants("4", "Ristorante Pizzeria Da Mario","false","true","true","false","true","false","false","true","true","Adolph-Roemer-Straße","33","38678","Clausthal-Zellerfeld","05323 5630","11:30","23:00");
+        Restaurants restaurants5 = new Restaurants("5", "Mekong","false","false","false","true","false","false","false","true","true","Sorge","2","38678","Clausthal-Zellerfeld","05323 9825928","11:30","21:30");
+        Restaurants restaurants6 = new Restaurants("6", "Ratskeller","false","false","true","false","true","false","false","true","true","An der Marktkirche","8","38678","Clausthal-Zellerfeld","05323 2627","12:00","23:00");
+        Restaurants restaurants7 = new Restaurants("7", "Glück-Auf","false","false","true","false","true","false","false","true","true","An der Marktkirche","7","38678","Clausthal-Zellerfeld","05323 1616","12:00","22:00");
 
         restaurantDatabase.dao().deleteRestaurant(restaurants1);
         restaurantDatabase.dao().addRestaurant(restaurants1);
@@ -52,6 +56,14 @@ public class MainActivity extends AppCompatActivity {
         restaurantDatabase.dao().addRestaurant(restaurants2);
         restaurantDatabase.dao().deleteRestaurant(restaurants3);
         restaurantDatabase.dao().addRestaurant(restaurants3);
+        restaurantDatabase.dao().deleteRestaurant(restaurants4);
+        restaurantDatabase.dao().addRestaurant(restaurants4);
+        restaurantDatabase.dao().deleteRestaurant(restaurants5);
+        restaurantDatabase.dao().addRestaurant(restaurants5);
+        restaurantDatabase.dao().deleteRestaurant(restaurants6);
+        restaurantDatabase.dao().addRestaurant(restaurants6);
+        restaurantDatabase.dao().deleteRestaurant(restaurants7);
+        restaurantDatabase.dao().addRestaurant(restaurants7);
 
 
         burger = findViewById(R.id.burger);
