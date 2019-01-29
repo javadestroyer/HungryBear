@@ -42,12 +42,16 @@ public class MainActivity extends AppCompatActivity {
         restaurantDatabase = Room.databaseBuilder(getApplicationContext(),RestaurantDatabase.class, "restaurantdb").allowMainThreadQueries().build();
 
 
-        Restaurants restaurants1 = new Restaurants("199", "Test","true","true","true","true","true","true","true","true","true","Test","0","38678","Clausthal-Zellerfeld","05323","11:00","13:00");
-        Restaurants restaurants2 = new Restaurants("19", "Test","true","true","true","true","true","true","true","true","true","Test","0","38678","Clausthal-Zellerfeld","05323","11:00","13:00");
+        Restaurants restaurants1 = new Restaurants("1", "Euro Döner","true","true","false","false","false","true","false","false","false","Adolph-Römer-Straße","7","38678","Clausthal-Zellerfeld","05323 840230","11:00","23:00");
+        Restaurants restaurants2 = new Restaurants("2", "Pizza Inn","false","true","true","false","false","false","true","true","false","Adolph-Römer-Straße","21","38678","Clausthal-Zellerfeld","05323 982588","11:30","22:00");
+        Restaurants restaurants3 = new Restaurants("3", "Ju Bin Lou","false","false","false","true","false","false","false","false","false","Schulstraße","47","38678","Clausthal-Zellerfeld","05323 7018421","11:30","22:00");
+
         restaurantDatabase.dao().deleteRestaurant(restaurants1);
         restaurantDatabase.dao().addRestaurant(restaurants1);
         restaurantDatabase.dao().deleteRestaurant(restaurants2);
         restaurantDatabase.dao().addRestaurant(restaurants2);
+        restaurantDatabase.dao().deleteRestaurant(restaurants3);
+        restaurantDatabase.dao().addRestaurant(restaurants3);
 
 
         burger = findViewById(R.id.burger);

@@ -25,7 +25,7 @@ public class MainViewAll extends AppCompatActivity {
 
         //RestaurantDatabase rdb = Room.databaseBuilder(getApplicationContext(), RestaurantDatabase.class, "restaurant_db").allowMainThreadQueries().build();
 
-        List<Restaurants> restaurants = restaurantDatabase.dao().getRestaurants();
+        List<Restaurants> restaurants = restaurantDatabase.dao().getViewAll();
 
         //List<Restaurants> restaurants = new ArrayList<>();
         //restaurants.add(new Restaurants("Line 1", "Line 2", "","","","","","","",""));
