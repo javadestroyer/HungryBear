@@ -24,19 +24,24 @@ public class DisplayRestaurant extends AppCompatActivity {
         textView = findViewById(R.id.textView5);
         calleurodoener = findViewById(R.id.calleurodoener);
 
+        final Bundle extras = getIntent().getExtras();
+
+        String telefon = extras.getString("RTelefon");
+        final String telefonnr = "tel:" + telefon;
+
 
         calleurodoener.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent callIntent = new Intent(Intent.ACTION_DIAL);
-                callIntent.setData(Uri.parse("tel:123456789"));
+                callIntent.setData(Uri.parse(telefonnr));
                 startActivity(callIntent);
             }
         });
 
         //textView.setText("Hallo");
 
-        Bundle extras = getIntent().getExtras();
+
 
         String data1 = extras.getString("RName");
         textView1.setText(data1);
