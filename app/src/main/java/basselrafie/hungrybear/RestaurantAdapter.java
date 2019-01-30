@@ -50,6 +50,7 @@ class RestaurantAdapter extends RecyclerView.Adapter<RestaurantAdapter.ViewHolde
                 String rstraße = restaurant.getRstraße();
                 String rhausnr = restaurant.getRhausnr();
                 String rplz = restaurant.getRplz();
+                String rort = restaurant.getRort();
                 String rtelefon = restaurant.getRtelefon();
                 String rvon = restaurant.getRvon();
                 String rbis = restaurant.getRbis();
@@ -61,6 +62,7 @@ class RestaurantAdapter extends RecyclerView.Adapter<RestaurantAdapter.ViewHolde
                 i.putExtra("RStraße", rstraße);
                 i.putExtra("RHausNr", rhausnr);
                 i.putExtra("Rplz", rplz);
+                i.putExtra("Rort", rort);
                 i.putExtra("RTelefon", rtelefon);
                 i.putExtra("RVon", rvon);
                 i.putExtra("RBis", rbis);
