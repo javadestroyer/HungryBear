@@ -53,6 +53,8 @@ class RestaurantAdapter extends RecyclerView.Adapter<RestaurantAdapter.ViewHolde
                 String rtelefon = restaurant.getRtelefon();
                 String rvon = restaurant.getRvon();
                 String rbis = restaurant.getRbis();
+                String rlink = restaurant.getRlink();
+                String rbild = restaurant.getRbild();
 
                 i.putExtra("RId", rid);
                 i.putExtra("RName", rname);
@@ -62,6 +64,8 @@ class RestaurantAdapter extends RecyclerView.Adapter<RestaurantAdapter.ViewHolde
                 i.putExtra("RTelefon", rtelefon);
                 i.putExtra("RVon", rvon);
                 i.putExtra("RBis", rbis);
+                i.putExtra("RLink", rlink);
+                i.putExtra("RBild", rbild);
 
                 context.startActivity(i);
             }
