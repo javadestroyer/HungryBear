@@ -282,7 +282,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="18dp"
         android:ems="10"
-        android:hint="Telefonnummer"
+        android:hint="Bild Datei"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
