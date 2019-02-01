@@ -4,31 +4,29 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/white"
+    android:background="@drawable/tablebackground"
     tools:context=".MainActivity">
 
 
     <ImageButton
         android:id="@+id/burger"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_width="87dp"
+        android:layout_height="80dp"
         android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp"
-        android:background="@android:color/white"
+        android:background="@null"
         android:scaleType="fitXY"
         android:scaleX="1.2"
         android:scaleY="1.2"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.029"
+        app:layout_constraintHorizontal_bias="0.068"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.223"
-        app:srcCompat="@drawable/burger" />
+        app:layout_constraintVertical_bias="0.247"
+        app:srcCompat="@drawable/burgerbtn" />
 
     <ImageButton
         android:id="@+id/pizza"
@@ -40,7 +38,7 @@
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp"
-        android:background="@android:color/white"
+        android:background="@null"
         android:scaleType="fitXY"
         android:scaleX="1.2"
         android:scaleY="1.2"
@@ -49,7 +47,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.223"
-        app:srcCompat="@drawable/pizza" />
+        app:srcCompat="@drawable/pizzabtn" />
 
     <ImageButton
         android:id="@+id/italian"
@@ -59,7 +57,7 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
-        android:background="@android:color/white"
+        android:background="@null"
         android:scaleType="fitXY"
         android:scaleX="1.2"
         android:scaleY="1.2"
@@ -81,7 +79,7 @@
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp"
-        android:background="@android:color/white"
+        android:background="@null"
         android:scaleType="fitXY"
         android:scaleX="1.2"
         android:scaleY="1.2"
@@ -90,7 +88,7 @@
         app:layout_constraintHorizontal_bias="0.033"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/baguette" />
+        app:srcCompat="@drawable/baguettebtn" />
 
     <ImageButton
         android:id="@+id/asian"
@@ -100,7 +98,7 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
-        android:background="@android:color/white"
+        android:background="@null"
         android:scaleType="fitXY"
         android:scaleX="1.2"
         android:scaleY="1.2"
@@ -120,7 +118,7 @@
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp"
-        android:background="@android:color/white"
+        android:background="@null"
         android:scaleType="fitXY"
         android:scaleX="1.2"
         android:scaleY="1.2"
@@ -133,15 +131,13 @@
 
     <ImageButton
         android:id="@+id/salad"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_width="104dp"
+        android:layout_height="102dp"
         android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp"
-        android:background="@android:color/white"
+        android:background="@null"
         android:scaleType="fitXY"
         android:scaleX="1.2"
         android:scaleY="1.2"
@@ -161,7 +157,7 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
-        android:background="@android:color/white"
+        android:background="@null"
         android:contentDescription="fish"
         android:scaleType="fitXY"
         android:scaleX="1.2"
@@ -183,7 +179,7 @@
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp"
-        android:background="@android:color/white"
+        android:background="@null"
         android:scaleType="fitXY"
         android:scaleX="1.2"
         android:scaleY="1.2"
