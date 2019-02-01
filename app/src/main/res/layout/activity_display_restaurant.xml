@@ -12,17 +12,17 @@
         android:layout_height="wrap_content">
 
         <TextView
-            android:textColor="@color/Black"
-            android:textStyle="bold"
-            android:textSize="45sp"
-            android:layout_marginTop="20dp"
-            android:layout_marginStart="20dp"
             android:id="@+id/txt_view_2"
-            android:layout_width="wrap_content"
+            android:layout_width="379dp"
             android:layout_height="wrap_content"
-            android:text="Euro Döner"
-            android:singleLine="false"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
             android:maxLines="4"
+            android:singleLine="false"
+            android:text="Euro Döner"
+            android:textColor="@color/Black"
+            android:textSize="45sp"
+            android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
