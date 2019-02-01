@@ -15,6 +15,8 @@
             android:textColor="@color/Black"
             android:textStyle="bold"
             android:textSize="45sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"
             android:id="@+id/txt_view_2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -26,9 +28,12 @@
             android:id="@+id/textView3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="20dp"
+            android:layout_marginStart="30dp"
             android:layout_marginTop="20dp"
-            android:text="Informationen"
+            android:text="Informationen:"
+            android:textColor="@color/Black"
+            android:textStyle="bold"
+            android:textSize="26sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/txt_view_2" />
 
@@ -36,8 +41,12 @@
             android:id="@+id/textView4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="20dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="5sp"
             android:text="Öffnungszeiten: "
+            android:textColor="@color/Black"
+            android:textStyle="bold"
+            android:textSize="20sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
@@ -47,7 +56,11 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="0dp"
             android:layout_marginEnd="5dp"
-            android:text="TextView"
+            android:layout_marginTop="5sp"
+            android:text="Uhrzeit"
+            android:textColor="@color/Black"
+            android:textStyle="bold"
+            android:textSize="20sp"
             app:layout_constraintStart_toEndOf="@id/textView4"
             app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
@@ -55,40 +68,50 @@
             android:id="@+id/telefon"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="20dp"
+            android:layout_marginStart="30dp"
             android:text="Telefon: "
+            android:textColor="@color/Black"
+            android:textStyle="bold"
+            android:textSize="20sp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView4"/>
+            app:layout_constraintTop_toBottomOf="@+id/adresse"/>
 
         <TextView
             android:id="@+id/txt_rtelefon"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="0dp"
+            android:textColor="@color/Black"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:text="Telefonnummer"
             app:layout_constraintStart_toEndOf="@id/telefon"
-            app:layout_constraintTop_toBottomOf="@+id/textView4"/>
+            app:layout_constraintTop_toBottomOf="@+id/adresse"/>
 
         <ImageButton
             android:id="@+id/calleurodoener"
             android:src="@drawable/ic_action_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
+            android:layout_marginStart="30dp"
             android:layout_marginTop="8dp"
             android:layout_marginEnd="8dp"
             android:layout_marginBottom="8dp"
             android:text="Anrufen"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView5"/>
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/telefon"/>
 
         <TextView
             android:id="@+id/adresse"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginStart="20dp"
+            android:layout_marginStart="30dp"
             android:text="Adresse: "
+            android:textColor="@color/Black"
+            android:textSize="20sp"
+            android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/telefon"/>
+            app:layout_constraintTop_toBottomOf="@id/textView4" />
 
         <TextView
             android:id="@+id/txt_rlink"
@@ -96,13 +119,17 @@
             android:layout_height="match_parent"
             android:layout_marginStart="0dp"
             android:text="RLink"
+            android:textColor="@color/Black"
+            android:textStyle="bold"
+            android:textSize="20sp"
             app:layout_constraintStart_toEndOf="@id/adresse"
-            app:layout_constraintTop_toBottomOf="@id/telefon"/>
+            app:layout_constraintTop_toBottomOf="@id/textView4"/>
 
         <ImageView
             android:id="@+id/imageView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
             android:scaleType="fitXY"
             android:src="@drawable/bear"
             app:layout_constraintTop_toBottomOf="@+id/calleurodoener" />
