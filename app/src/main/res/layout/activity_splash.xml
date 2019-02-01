@@ -7,16 +7,18 @@
 
     <ImageView
         android:id="@+id/iv"
-        android:layout_width="301dp"
-        android:layout_height="317dp"
+        android:layout_width="306dp"
+        android:layout_height="310dp"
         android:layout_centerInParent="true"
         android:src="@drawable/bear" />
 
     <TextView
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/iv"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="165dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginBottom="131dp"
         android:gravity="center_horizontal"
         android:text="HungryBear"
         android:textColor="@color/Black"
