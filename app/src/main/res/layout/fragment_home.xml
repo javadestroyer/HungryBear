@@ -19,7 +19,7 @@
         android:background="@drawable/addrestaurant"
         android:text="Add Restaurant"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintBottom_toTopOf="@id/bn_update_Restaurant"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -28,26 +28,27 @@
         android:layout_width="182dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="56dp"
+        android:layout_marginTop="48dp"
         android:layout_marginEnd="8dp"
         android:background="@drawable/viewrestaurant"
         android:text="View Restaurant"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintBottom_toTopOf="@id/bn_delete_restaurant"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/bn_add_restaurant" />
+        app:layout_constraintTop_toBottomOf="@+id/bn_update_Restaurant" />
 
     <Button
         android:id="@+id/bn_delete_restaurant"
         android:layout_width="182dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="56dp"
+        android:layout_marginTop="48dp"
         android:layout_marginEnd="8dp"
+        android:layout_marginBottom="156dp"
         android:background="@drawable/deleterestaurant"
         android:text="Delete Restaurant"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/bn_view_restaurant" />
 
@@ -56,13 +57,13 @@
         android:layout_width="182dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="56dp"
+        android:layout_marginTop="48dp"
         android:layout_marginEnd="8dp"
         android:background="@drawable/updaterestaurant"
         android:text="Update Restaurant"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintBottom_toTopOf="@id/bn_view_restaurant"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/bn_delete_restaurant" />
+        app:layout_constraintTop_toBottomOf="@+id/bn_add_restaurant" />
 
 </android.support.constraint.ConstraintLayout>
