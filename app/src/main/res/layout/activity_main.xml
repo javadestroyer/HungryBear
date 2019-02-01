@@ -10,8 +10,8 @@
 
     <ImageButton
         android:id="@+id/burger"
-        android:layout_width="87dp"
-        android:layout_height="80dp"
+        android:layout_width="115dp"
+        android:layout_height="112dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
@@ -30,13 +30,11 @@
 
     <ImageButton
         android:id="@+id/pizza"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_width="162dp"
+        android:layout_height="128dp"
         android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp"
         android:background="@null"
         android:scaleType="fitXY"
@@ -46,13 +44,13 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.223"
+        app:layout_constraintVertical_bias="0.227"
         app:srcCompat="@drawable/pizzabtn" />
 
     <ImageButton
         android:id="@+id/italian"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_width="138dp"
+        android:layout_height="143dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
@@ -63,21 +61,19 @@
         android:scaleY="1.2"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.97"
+        app:layout_constraintHorizontal_bias="0.937"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.223"
+        app:layout_constraintVertical_bias="0.22"
         app:srcCompat="@drawable/italian" />
 
     <ImageButton
         android:id="@+id/baguette"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_width="156dp"
+        android:layout_height="131dp"
         android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp"
         android:background="@null"
         android:scaleType="fitXY"
@@ -92,8 +88,8 @@
 
     <ImageButton
         android:id="@+id/asian"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_width="152dp"
+        android:layout_height="142dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
@@ -110,13 +106,11 @@
 
     <ImageButton
         android:id="@+id/doener"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_width="141dp"
+        android:layout_height="130dp"
         android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp"
         android:background="@null"
         android:scaleType="fitXY"
@@ -124,15 +118,15 @@
         android:scaleY="1.2"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.969"
+        app:layout_constraintHorizontal_bias="0.925"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/doener" />
 
     <ImageButton
         android:id="@+id/salad"
-        android:layout_width="104dp"
-        android:layout_height="102dp"
+        android:layout_width="147dp"
+        android:layout_height="134dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
@@ -151,8 +145,8 @@
 
     <ImageButton
         android:id="@+id/fish"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_width="144dp"
+        android:layout_height="129dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
@@ -171,13 +165,11 @@
 
     <ImageButton
         android:id="@+id/steak"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_width="124dp"
+        android:layout_height="126dp"
         android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp"
         android:background="@null"
         android:scaleType="fitXY"
@@ -185,7 +177,7 @@
         android:scaleY="1.2"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.97"
+        app:layout_constraintHorizontal_bias="0.929"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.78"
