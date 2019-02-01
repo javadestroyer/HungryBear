@@ -379,7 +379,6 @@
         android:layout_marginTop="16dp"
         android:layout_marginEnd="120dp"
         android:text="Button"
-        app:layout_constraintEnd_toStartOf="@+id/Bn_Admin"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 </android.support.constraint.ConstraintLayout>
