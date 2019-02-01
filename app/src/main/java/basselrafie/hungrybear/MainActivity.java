@@ -89,7 +89,6 @@ public class MainActivity extends AppCompatActivity {
         fish = findViewById(R.id.fish);
         steak = findViewById(R.id.steak);
         allMenus = findViewById(R.id.allMenus);
-        Admin = findViewById(R.id.Bn_Admin);
 
         tburger = findViewById(R.id.tburger);
         tpizza = findViewById(R.id.tpizza);
@@ -161,13 +160,6 @@ public class MainActivity extends AppCompatActivity {
         daMario.setOpeningTimes("10-22");
 
 
-        Admin.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent j = new Intent(MainActivity.this, AdminHome.class);
-                startActivity(j);
-            }
-        });
 
         pizza.setOnClickListener(new View.OnClickListener() {
             @Override
