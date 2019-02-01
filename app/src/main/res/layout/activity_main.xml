@@ -253,12 +253,9 @@
         android:text="Burger"
         android:textColor="@color/Black"
         android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.101"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.355" />
+        app:layout_constraintTop_toBottomOf="@id/burger"
+        app:layout_constraintRight_toRightOf="@id/burger"
+        app:layout_constraintLeft_toLeftOf="@id/burger"/>
 
     <TextView
         android:id="@+id/tpizza"
@@ -271,12 +268,9 @@
         android:text="Pizza"
         android:textColor="@color/Black"
         android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/titalienisch"
-        app:layout_constraintHorizontal_bias="0.517"
-        app:layout_constraintStart_toEndOf="@+id/tburger"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.356" />
+        app:layout_constraintTop_toBottomOf="@id/pizza"
+        app:layout_constraintRight_toRightOf="@id/pizza"
+        app:layout_constraintLeft_toLeftOf="@id/pizza" />
 
     <TextView
         android:id="@+id/titalienisch"
@@ -289,12 +283,9 @@
         android:text="Italienisch"
         android:textColor="@color/Black"
         android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.942"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.356" />
+        app:layout_constraintTop_toBottomOf="@id/italian"
+        app:layout_constraintRight_toRightOf="@id/italian"
+        app:layout_constraintLeft_toLeftOf="@id/italian" />
 
     <TextView
         android:id="@+id/tbaguette"
@@ -307,12 +298,9 @@
         android:text="Baguette"
         android:textColor="@color/Black"
         android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.065"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/tburger"
-        app:layout_constraintVertical_bias="0.393" />
+        app:layout_constraintTop_toBottomOf="@id/baguette"
+        app:layout_constraintRight_toRightOf="@id/baguette"
+        app:layout_constraintLeft_toLeftOf="@id/baguette" />
 
     <TextView
         android:id="@+id/tasiatisch"
@@ -325,12 +313,9 @@
         android:text="Asiatisch"
         android:textColor="@color/Black"
         android:textSize="18sp"
-        app:layout_constraintBottom_toTopOf="@+id/fish"
-        app:layout_constraintEnd_toStartOf="@+id/tdoener"
-        app:layout_constraintHorizontal_bias="0.444"
-        app:layout_constraintStart_toEndOf="@+id/tbaguette"
-        app:layout_constraintTop_toTopOf="@+id/asian"
-        app:layout_constraintVertical_bias="0.886" />
+        app:layout_constraintTop_toBottomOf="@id/asian"
+        app:layout_constraintRight_toRightOf="@id/asian"
+        app:layout_constraintLeft_toLeftOf="@id/asian" />
 
     <TextView
         android:id="@+id/tdoener"
@@ -343,12 +328,9 @@
         android:text="Döner"
         android:textColor="@color/Black"
         android:textSize="18sp"
-        app:layout_constraintBottom_toTopOf="@+id/steak"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.91"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/doener"
-        app:layout_constraintVertical_bias="0.886" />
+        app:layout_constraintTop_toBottomOf="@id/doener"
+        app:layout_constraintRight_toRightOf="@id/doener"
+        app:layout_constraintLeft_toLeftOf="@id/doener" />
 
     <TextView
         android:id="@+id/tsalat"
@@ -361,12 +343,9 @@
         android:text="Salat"
         android:textColor="@color/Black"
         android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.103"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.868" />
+        app:layout_constraintTop_toBottomOf="@id/salad"
+        app:layout_constraintRight_toRightOf="@id/salad"
+        app:layout_constraintLeft_toLeftOf="@id/salad" />
 
     <TextView
         android:id="@+id/tsteak"
@@ -379,12 +358,9 @@
         android:text="Steak"
         android:textColor="@color/Black"
         android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.91"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.874" />
+        app:layout_constraintTop_toBottomOf="@id/steak"
+        app:layout_constraintRight_toRightOf="@id/steak"
+        app:layout_constraintLeft_toLeftOf="@id/steak" />
 
     <TextView
         android:id="@+id/tseafood"
@@ -397,10 +373,7 @@
         android:text="Seafood"
         android:textColor="@color/Black"
         android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.524"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.873" />
+        app:layout_constraintTop_toBottomOf="@id/fish"
+        app:layout_constraintRight_toRightOf="@id/fish"
+        app:layout_constraintLeft_toLeftOf="@id/fish" />
 </android.support.constraint.ConstraintLayout>
