@@ -39,7 +39,7 @@ public class activity_login extends AppCompatActivity {
 
     private void validate(String userName, String userPassword){
 
-        if((userName.equals("Bitch")) && (userPassword.equals("1234"))){
+        if((userName.equals("Admin")) && (userPassword.equals("1234"))){
             Intent intent = new Intent(activity_login.this,AdminHome.class);
             startActivity(intent);
         }
