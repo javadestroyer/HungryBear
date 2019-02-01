@@ -51,7 +51,7 @@ public class MainRestaurants {
         this.steak = steak;
     }
 
-    //public String[] catergories = {"Burger", "Pizza", "italian", "Baguette", "Asian", "Doener", "Salad", "Fish", "Steak"};
+
     public void setRestaurantName(String restaurantName) {
 
     }

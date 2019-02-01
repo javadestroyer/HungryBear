@@ -12,39 +12,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 public class Splash extends Activity {
-    //private TextView tv;
-    //private ImageView iv;
 
-
-    /*@Override
-    protected void onCreate(Bundle savedInstanceState) {
-
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_splash);
-        tv = (TextView) findViewById(R.id.tv);
-        iv = (ImageView) findViewById(R.id.iv);
-        Animation myanim = AnimationUtils.loadAnimation(this, R.anim.mytransition);
-        tv.startAnimation(myanim);
-        iv.startAnimation(myanim);
-        final Intent i = new Intent(this,MainActivity.class);
-
-        Thread timer = new Thread(){
-
-            @Override
-            public void run() {
-                try {
-                    sleep(3500);
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                }
-                finally {
-                    startActivity(i);
-
-                }
-            }
-        };
-        timer.start();
-    }*/
 
     private static int SPLASH_TIME_OUT = 3000;
 

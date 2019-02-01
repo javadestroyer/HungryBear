@@ -24,15 +24,9 @@ public class MainBurger extends AppCompatActivity {
 
         recyclerView = findViewById(R.id.recycler_view);
 
-        //RestaurantDatabase rdb = Room.databaseBuilder(getApplicationContext(), RestaurantDatabase.class, "restaurant_db").allowMainThreadQueries().build();
 
         List<Restaurants> restaurants = restaurantDatabase.dao().getBurger();
 
-        //List<Restaurants> restaurants = new ArrayList<>();
-        //restaurants.add(new Restaurants("Line 1", "Line 2", "","","","","","","",""));
-        //restaurants.add(new Restaurants("Line 2", "Line 2", "","","","","","","",""));
-        //restaurants.add(new Restaurants("Line 3", "Line 2", "","","","","","","",""));
-        //restaurants.add(new Restaurants("Line 4", "Line 2", "","","","","","","",""));
 
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         adapter = new RestaurantAdapter(restaurants,this);
