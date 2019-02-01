@@ -9,6 +9,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import java.io.File;
@@ -28,6 +29,17 @@ public class MainActivity extends AppCompatActivity {
     ImageButton steak;
     Button allMenus;
     ImageButton Admin;
+
+    TextView tburger;
+    TextView tpizza;
+    TextView titalienisch;
+    TextView tbaguette;
+    TextView tasiatisch;
+    TextView tdoener;
+    TextView tsalat;
+    TextView tseafood;
+    TextView tsteak;
+
 
 
     public static ArrayList <MainRestaurants> categories = new ArrayList<MainRestaurants>();
@@ -77,6 +89,17 @@ public class MainActivity extends AppCompatActivity {
         steak = findViewById(R.id.steak);
         allMenus = findViewById(R.id.allMenus);
         Admin = findViewById(R.id.Bn_Admin);
+
+        tburger = findViewById(R.id.tburger);
+        tpizza = findViewById(R.id.tpizza);
+        titalienisch = findViewById(R.id.titalienisch);
+        tbaguette = findViewById(R.id.tbaguette);
+        tasiatisch = findViewById(R.id.tasiatisch);
+        tdoener = findViewById(R.id.tdoener);
+        tsalat = findViewById(R.id.tsalat);
+        tseafood = findViewById(R.id.tseafood);
+        tsteak = findViewById(R.id.tsteak);
+
 
 
 

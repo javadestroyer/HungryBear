@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:background="@android:color/white">
+    android:background="@android:color/white"
+    tools:context=".MainActivity">
 
 
     <ImageButton
@@ -18,6 +18,7 @@
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp"
+        android:background="@android:color/white"
         android:scaleType="fitXY"
         android:scaleX="1.2"
         android:scaleY="1.2"
@@ -27,8 +28,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.223"
-        app:srcCompat="@drawable/burger"
-        android:background="@android:color/white"/>
+        app:srcCompat="@drawable/burger" />
 
     <ImageButton
         android:id="@+id/pizza"
@@ -40,6 +40,7 @@
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp"
+        android:background="@android:color/white"
         android:scaleType="fitXY"
         android:scaleX="1.2"
         android:scaleY="1.2"
@@ -48,9 +49,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.223"
-        app:srcCompat="@drawable/pizza"
-        android:background="@android:color/white"
-        />
+        app:srcCompat="@drawable/pizza" />
 
     <ImageButton
         android:id="@+id/italian"
@@ -60,6 +59,7 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
+        android:background="@android:color/white"
         android:scaleType="fitXY"
         android:scaleX="1.2"
         android:scaleY="1.2"
@@ -69,8 +69,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.223"
-        app:srcCompat="@drawable/italian"
-        android:background="@android:color/white"/>
+        app:srcCompat="@drawable/italian" />
 
     <ImageButton
         android:id="@+id/baguette"
@@ -82,6 +81,7 @@
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp"
+        android:background="@android:color/white"
         android:scaleType="fitXY"
         android:scaleX="1.2"
         android:scaleY="1.2"
@@ -90,19 +90,17 @@
         app:layout_constraintHorizontal_bias="0.033"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/baguette"
-        android:background="@android:color/white"/>
+        app:srcCompat="@drawable/baguette" />
 
     <ImageButton
         android:id="@+id/asian"
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp"
+        android:background="@android:color/white"
         android:scaleType="fitXY"
         android:scaleX="1.2"
         android:scaleY="1.2"
@@ -110,8 +108,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/asian"
-        android:background="@android:color/white"/>
+        app:srcCompat="@drawable/asian" />
 
     <ImageButton
         android:id="@+id/doener"
@@ -123,6 +120,7 @@
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp"
+        android:background="@android:color/white"
         android:scaleType="fitXY"
         android:scaleX="1.2"
         android:scaleY="1.2"
@@ -131,8 +129,7 @@
         app:layout_constraintHorizontal_bias="0.969"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/doener"
-        android:background="@android:color/white"/>
+        app:srcCompat="@drawable/doener" />
 
     <ImageButton
         android:id="@+id/salad"
@@ -144,6 +141,7 @@
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp"
+        android:background="@android:color/white"
         android:scaleType="fitXY"
         android:scaleX="1.2"
         android:scaleY="1.2"
@@ -153,8 +151,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.78"
-        app:srcCompat="@drawable/salad"
-        android:background="@android:color/white"/>
+        app:srcCompat="@drawable/salad" />
 
     <ImageButton
         android:id="@+id/fish"
@@ -164,6 +161,7 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
+        android:background="@android:color/white"
         android:contentDescription="fish"
         android:scaleType="fitXY"
         android:scaleX="1.2"
@@ -173,8 +171,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.78"
-        app:srcCompat="@drawable/fish"
-        android:background="@android:color/white"/>
+        app:srcCompat="@drawable/fish" />
 
     <ImageButton
         android:id="@+id/steak"
@@ -186,6 +183,7 @@
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp"
+        android:background="@android:color/white"
         android:scaleType="fitXY"
         android:scaleX="1.2"
         android:scaleY="1.2"
@@ -195,8 +193,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.78"
-        app:srcCompat="@drawable/steak"
-        android:background="@android:color/white"/>
+        app:srcCompat="@drawable/steak" />
 
     <TextView
         android:id="@+id/textView"
@@ -240,8 +237,170 @@
         android:id="@+id/Bn_Admin"
         android:layout_width="40dp"
         android:layout_height="40dp"
+        android:background="@color/White"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:srcCompat="@android:drawable/ic_menu_manage"
-        android:background="@color/White"/>
+        tools:srcCompat="@android:drawable/ic_menu_manage" />
+
+    <TextView
+        android:id="@+id/tburger"
+        android:layout_width="59dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="Burger"
+        android:textColor="@color/Black"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.101"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.355" />
+
+    <TextView
+        android:id="@+id/tpizza"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="Pizza"
+        android:textColor="@color/Black"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/titalienisch"
+        app:layout_constraintHorizontal_bias="0.517"
+        app:layout_constraintStart_toEndOf="@+id/tburger"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.356" />
+
+    <TextView
+        android:id="@+id/titalienisch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="Italienisch"
+        android:textColor="@color/Black"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.942"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.356" />
+
+    <TextView
+        android:id="@+id/tbaguette"
+        android:layout_width="wrap_content"
+        android:layout_height="23dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="Baguette"
+        android:textColor="@color/Black"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.065"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tburger"
+        app:layout_constraintVertical_bias="0.393" />
+
+    <TextView
+        android:id="@+id/tasiatisch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="Asiatisch"
+        android:textColor="@color/Black"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/fish"
+        app:layout_constraintEnd_toStartOf="@+id/tdoener"
+        app:layout_constraintHorizontal_bias="0.444"
+        app:layout_constraintStart_toEndOf="@+id/tbaguette"
+        app:layout_constraintTop_toTopOf="@+id/asian"
+        app:layout_constraintVertical_bias="0.886" />
+
+    <TextView
+        android:id="@+id/tdoener"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="Döner"
+        android:textColor="@color/Black"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/steak"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.91"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/doener"
+        app:layout_constraintVertical_bias="0.886" />
+
+    <TextView
+        android:id="@+id/tsalat"
+        android:layout_width="67dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="Salat"
+        android:textColor="@color/Black"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.103"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.868" />
+
+    <TextView
+        android:id="@+id/tsteak"
+        android:layout_width="50dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="Steak"
+        android:textColor="@color/Black"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.91"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.874" />
+
+    <TextView
+        android:id="@+id/tseafood"
+        android:layout_width="86dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="Seafood"
+        android:textColor="@color/Black"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.524"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.873" />
 </android.support.constraint.ConstraintLayout>
