@@ -49,6 +49,14 @@ public class DisplayRestaurant extends AppCompatActivity {
                 startActivity(callIntent);
             }
         });
+        /*public void onClick(View v) {
+            Intent callIntent = new Intent(Intent.ACTION_DIAL);
+
+            String tel = extras.getString("rtelefon");
+            String x = "tel:" + tel;
+            callIntent.setData(Uri.parse(x));
+            startActivity(callIntent);
+        }*/
 
         String data1 = extras.getString("RName");
         textView1.setText(data1);
