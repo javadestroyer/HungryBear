@@ -27,6 +27,8 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.247"
         app:srcCompat="@drawable/burgerbtn" />
+    <!-- Quelle von dem Bild burger: https://www.fuddruckers.com/worlds-greatest-hamburgers -->
+
 
     <ImageButton
         android:id="@+id/pizza"
@@ -48,6 +50,8 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.223"
         app:srcCompat="@drawable/pizzabtn" />
+    <!-- Quelle von dem Bild pizza: https://coreymondello.com/image-pizza.html  -->
+
 
     <ImageButton
         android:id="@+id/italian"
@@ -68,6 +72,8 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.223"
         app:srcCompat="@drawable/italian" />
+    <!-- Quelle von dem Bild italian: https://www.kisspng.com/png-pasta-al-pomodoro-bolognese-sauce-pizza-spaghetti-685930/ -->
+
 
     <ImageButton
         android:id="@+id/baguette"
@@ -89,6 +95,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/baguettebtn" />
+    <!-- Quelle von dem Bild baguette: https://www.back-factory.de/lecker-frisch/produkt/rustino-chicken-nugget.html  -->
+
 
     <ImageButton
         android:id="@+id/asian"
@@ -107,6 +115,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/asian" />
+    <!-- Quelle von dem Bild asian: https://www.pngkey.com/detail/u2q8u2i1u2w7o0r5_asian-noodles-png-clipart-/  -->
+
 
     <ImageButton
         android:id="@+id/doener"
@@ -128,6 +138,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/doener" />
+    <!-- Quelle von dem Bild doener: http://mcisi.de -->
+
 
     <ImageButton
         android:id="@+id/salad"
@@ -148,6 +160,8 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.78"
         app:srcCompat="@drawable/salad" />
+    <!-- Quelle von dem Bilds salad: https://www.kisspng.com/png-caesar-salad-wrap-vinaigrette-greek-salad-salad-pn-102138/  -->
+
 
     <ImageButton
         android:id="@+id/fish"
@@ -169,6 +183,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.78"
         app:srcCompat="@drawable/fish" />
+    <!-- Quelle von dem Bild fish: http://www.stickpng.com/img/food/seafood/seafood-collection  -->
 
     <ImageButton
         android:id="@+id/steak"
@@ -191,6 +206,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.78"
         app:srcCompat="@drawable/steak" />
+    <!-- Quelle von dem Bild steak: https://ya-webdesign.com/explore/steak-png-transparent/?utm_source=gg#gal_672328  -->
 
     <TextView
         android:id="@+id/textView"
