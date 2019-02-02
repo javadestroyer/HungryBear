@@ -7,6 +7,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".HomeFragment"
     android:background="@drawable/buttonsbackground">
+    <!-- Quelle von dem Background bild des admin fragments: https://wallpaperaccess.com/italian-food#462860 -->
 
     <!-- TODO: Update blank fragment layout -->
     <Button

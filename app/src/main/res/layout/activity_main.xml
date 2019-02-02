@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/wood"
     tools:context=".MainActivity">
+    <!-- Quelle von dem background bild (wood): https://www.pexels.com/photo/abstract-antique-background-board-172277/ -->
 
 
     <ImageButton
