@@ -72,6 +72,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/bear" />
+    <!-- Quelle von dem Bild bear: http://www.creativeforkids.com/hungry-bear.html -->
 
     <TextView
         android:id="@+id/Credits"
