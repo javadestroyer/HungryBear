@@ -23,24 +23,18 @@ public class activity_login extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-        Name = (EditText) findViewById(R.id.etName);
-        Password = (EditText) findViewById(R.id.etPassword);
-        Info = (TextView) findViewById(R.id.tvInfo);
-        Login = (Button) findViewById(R.id.btnLogin);
+        Name = findViewById(R.id.etName);
+        Password = findViewById(R.id.etPassword);
+        Info = findViewById(R.id.tvInfo);
+        Login = findViewById(R.id.btnLogin);
         Info.setText("No of attempts remaining: 5");
-        Credits = (TextView) findViewById(R.id.Credits);
+        Credits = findViewById(R.id.Credits);
         Credits.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 openCreditsActivity();
             }
         });
-    }
-    public void openCreditsActivity(){
-        Intent intent2 = new Intent(this,CreditsActivity.class);
-        startActivity(intent2);
-
-
         Login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -48,8 +42,13 @@ public class activity_login extends AppCompatActivity {
             }
         });
 
-
     }
+    public void openCreditsActivity() {
+        Intent intent2 = new Intent(this, CreditsActivity.class);
+        startActivity(intent2);
+    }
+
+
 
     private void validate(String userName, String userPassword) {
 
