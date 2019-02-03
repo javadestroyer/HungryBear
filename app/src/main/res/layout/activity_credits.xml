@@ -12,10 +12,11 @@
         android:layout_width="132dp"
         android:layout_height="159dp"
         android:layout_marginTop="580dp"
-        android:layout_marginEnd="5dp"
+        android:layout_marginEnd="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.927"
         app:srcCompat="@drawable/bear" />
     <!-- Quelle von dem Bild bear: http://www.creativeforkids.com/hungry-bear.html -->
 
@@ -39,8 +40,12 @@
         android:id="@+id/imageView4"
         android:layout_width="95dp"
         android:layout_height="100dp"
-        android:layout_marginEnd="104dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="260dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView11"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.084"
+        app:layout_constraintStart_toEndOf="@+id/textView7"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@mipmap/ic_launcher_foreground" />
     <!-- Quelle des Bildes: https://www.stockio.com/free-icon/brown-bear -->
@@ -56,6 +61,7 @@
         android:textColor="@color/Black"
         app:layout_constraintBottom_toTopOf="@+id/textView14"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView4" />
 
