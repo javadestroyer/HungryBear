@@ -8,6 +8,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import org.w3c.dom.Text;
+
 public class activity_login extends AppCompatActivity {
 
     private EditText Name;
@@ -15,6 +17,7 @@ public class activity_login extends AppCompatActivity {
     private TextView Info;
     private Button Login;
     private int counter = 5;
+    private TextView Credits;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,6 +28,17 @@ public class activity_login extends AppCompatActivity {
         Info = (TextView) findViewById(R.id.tvInfo);
         Login = (Button) findViewById(R.id.btnLogin);
         Info.setText("No of attempts remaining: 5");
+        Credits = (TextView) findViewById(R.id.Credits);
+        Credits.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openCreditsActivity();
+            }
+        });
+    }
+    public void openCreditsActivity(){
+        Intent intent2 = new Intent(this,CreditsActivity.class);
+        startActivity(intent2);
 
 
         Login.setOnClickListener(new View.OnClickListener() {
@@ -37,13 +51,13 @@ public class activity_login extends AppCompatActivity {
 
     }
 
-    private void validate(String userName, String userPassword){
+    private void validate(String userName, String userPassword) {
 
-        if((userName.equals("Admin")) && (userPassword.equals("1234"))){
-            Intent intent = new Intent(activity_login.this,AdminHome.class);
+        if ((userName.equals("Admin")) && (userPassword.equals("1234"))) {
+            Intent intent = new Intent(activity_login.this, AdminHome.class);
             startActivity(intent);
-        }
-            else {counter--;
+        } else {
+            counter--;
 
             Info.setText(" No of attemtps remaining: " + String.valueOf(counter));
 
@@ -51,9 +65,7 @@ public class activity_login extends AppCompatActivity {
 
                 Login.setEnabled(false);
             }
-
-
-
         }
+
     }
 }

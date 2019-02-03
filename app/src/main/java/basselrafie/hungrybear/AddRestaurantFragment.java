@@ -86,17 +86,6 @@ public class AddRestaurantFragment extends Fragment {
 
                 //neues Restaurant anlegen
                 Restaurants restaurants = new Restaurants(rid,rname,rdoener,rpizza,ritalian,rasian,rsteak,rburger,rbaguette,rsalad,rfish,rstraße,rhausnr,rplz,rort,rtelefon,rvon,rbis,rlink,rbild);
-                /*restaurants.setRid(rid);
-                restaurants.setRname(rname);
-                restaurants.setRdoener(rdoener);
-                restaurants.setRpizza(rpizza);
-                restaurants.setRitalian(ritalian);
-                restaurants.setRasian(rasian);
-                restaurants.setRsteak(rsteak);
-                restaurants.setRburger(rburger);
-                restaurants.setRbaguette(rbaguette);
-                restaurants.setRsalat(rsalad);
-                restaurants.setRfish(rfish);*/
 
                 AdminHome.restaurantDatabase.dao().addRestaurant(restaurants);
                 Toast.makeText(getContext(),"Restaurant added", Toast.LENGTH_SHORT).show();
