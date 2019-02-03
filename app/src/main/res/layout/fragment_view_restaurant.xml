@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_marginBottom="12dp"
     tools:context=".ViewRestaurantFragment">
 
     <!-- TODO: Update blank fragment layout -->
@@ -12,6 +13,7 @@
         android:layout_height="match_parent"
         android:text="hello_blank_fragment"
         android:layout_margin="12dp"
+        android:paddingBottom="12dp"
         android:textStyle="bold"
         android:textSize="18sp"
         android:id="@+id/txt_display_info"/>

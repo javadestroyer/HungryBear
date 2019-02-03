@@ -5,8 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".UpdateRestaurantFragment"
-    android:background="@android:color/darker_gray">
+    tools:context=".UpdateRestaurantFragment">
 
     <!-- TODO: Update blank fragment layout -->
     <TextView
@@ -33,8 +32,6 @@
         android:ems="4"
         android:hint="ID"
         android:inputType="textPersonName|number"
-        android:background="@color/White"
-        android:padding="5px"
         app:layout_constraintStart_toEndOf="@id/txt_rname"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtUpdateRestaurant" />
@@ -49,8 +46,6 @@
         android:ems="10"
         android:hint="Restaurant Name"
         android:inputType="textPersonName"
-        android:background="@color/White"
-        android:padding="5px"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toStartOf="@id/txt_rid"
         app:layout_constraintTop_toBottomOf="@id/txtUpdateRestaurant"/>
@@ -65,8 +60,6 @@
         android:ems="10"
         android:hint="Straße"
         android:inputType="textPersonName"
-        android:background="@color/White"
-        android:padding="5px"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toStartOf="@id/txt_rid"
         app:layout_constraintTop_toBottomOf="@+id/txt_rname"/>
@@ -80,8 +73,6 @@
         android:ems="4"
         android:hint="Nr."
         android:inputType="textPersonName|number"
-        android:background="@color/White"
-        android:padding="5px"
         app:layout_constraintStart_toEndOf="@id/txt_rstraße"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txt_rid" />
@@ -96,8 +87,6 @@
         android:ems="10"
         android:text="Clausthal-Zellerfeld"
         android:inputType="textPersonName"
-        android:background="@color/White"
-        android:padding="5px"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toStartOf="@id/txt_rhausnr"
         app:layout_constraintTop_toBottomOf="@+id/txt_rstraße"/>
@@ -110,8 +99,6 @@
         android:layout_marginTop="18dp"
         android:ems="4"
         android:text="38678"
-        android:background="@color/White"
-        android:padding="5px"
         android:inputType="textPersonName|number"
         app:layout_constraintStart_toEndOf="@id/txt_rort"
         app:layout_constraintEnd_toEndOf="parent"
@@ -133,12 +120,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="18dp"
+        android:layout_marginTop="6dp"
         android:ems="4"
         android:hint="Von"
         android:inputType="time"
-        android:background="@color/White"
-        android:padding="5px"
         app:layout_constraintStart_toEndOf="@id/txt_offen"
         app:layout_constraintEnd_toStartOf="@id/txt_minus"
         app:layout_constraintTop_toBottomOf="@+id/txt_rplz" />
@@ -159,12 +144,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="18dp"
+        android:layout_marginTop="6dp"
         android:ems="4"
         android:hint="Bis"
         android:inputType="time"
-        android:background="@color/White"
-        android:padding="5px"
         app:layout_constraintStart_toEndOf="@id/txt_minus"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txt_rplz" />
@@ -179,8 +162,6 @@
         android:ems="10"
         android:hint="Telefonnummer"
         android:inputType="textPersonName"
-        android:background="@color/White"
-        android:padding="5px"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txt_offen"/>
@@ -189,121 +170,103 @@
 
     <CheckBox
         android:id="@+id/cb_pizza"
-        android:layout_width="110dp"
+        android:layout_width="90dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="32dp"
         android:text="Pizza"
-        android:background="@color/White"
-        android:padding="5px"
         app:layout_constraintTop_toBottomOf="@+id/txt_rtelefon"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
 
     <CheckBox
         android:id="@+id/cb_steak"
-        android:layout_width="110dp"
+        android:layout_width="90dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="32dp"
         android:text="Steak"
-        android:background="@color/White"
-        android:padding="5px"
         app:layout_constraintTop_toBottomOf="@+id/cb_pizza"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
 
     <CheckBox
         android:id="@+id/cb_salad"
-        android:layout_width="110dp"
+        android:layout_width="90dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="32dp"
         android:text="Salat"
-        android:background="@color/White"
-        android:padding="5px"
         app:layout_constraintTop_toBottomOf="@+id/cb_steak"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
 
     <CheckBox
         android:id="@+id/cb_doener"
-        android:layout_width="110dp"
+        android:layout_width="90dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="32dp"
         android:text="Döner"
-        android:background="@color/White"
-        android:padding="5px"
         app:layout_constraintTop_toBottomOf="@id/txt_rtelefon"
         app:layout_constraintEnd_toStartOf="@id/cb_pizza"/>
 
     <CheckBox
         android:id="@+id/cb_asian"
-        android:layout_width="110dp"
+        android:layout_width="90dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="32dp"
         android:text="Asiatisch"
-        android:background="@color/White"
-        android:padding="5px"
         app:layout_constraintTop_toBottomOf="@id/cb_doener"
         app:layout_constraintEnd_toStartOf="@id/cb_steak"/>
 
     <CheckBox
         android:id="@+id/cb_baguette"
-        android:layout_width="110dp"
+        android:layout_width="90dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="32dp"
         android:text="Baguette"
-        android:background="@color/White"
-        android:padding="5px"
         app:layout_constraintTop_toBottomOf="@id/cb_asian"
         app:layout_constraintEnd_toStartOf="@id/cb_salad"/>
 
     <CheckBox
         android:id="@+id/cb_italian"
-        android:layout_width="110dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="32dp"
         android:text="Italienisch"
-        android:background="@color/White"
-        android:padding="5px"
         app:layout_constraintTop_toBottomOf="@id/txt_rtelefon"
         app:layout_constraintStart_toEndOf="@id/cb_pizza"/>
 
     <CheckBox
         android:id="@+id/cb_burger"
-        android:layout_width="110dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="32dp"
         android:text="Burger"
-        android:background="@color/White"
-        android:padding="5px"
         app:layout_constraintTop_toBottomOf="@id/cb_italian"
         app:layout_constraintStart_toEndOf="@id/cb_steak"/>
 
     <CheckBox
         android:id="@+id/cb_fish"
-        android:layout_width="110dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="32dp"
         android:text="Fisch"
-        android:background="@color/White"
-        android:padding="5px"
         app:layout_constraintTop_toBottomOf="@id/cb_burger"
         app:layout_constraintStart_toEndOf="@id/cb_salad"/>
 
@@ -317,8 +280,6 @@
         android:ems="10"
         android:hint="GoogleMaps Link"
         android:inputType="textPersonName"
-        android:background="@color/White"
-        android:padding="5px"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cb_salad"/>
@@ -333,8 +294,6 @@
         android:ems="10"
         android:hint="Bild Datei"
         android:inputType="textPersonName"
-        android:background="@color/White"
-        android:padding="5px"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txt_rlink"/>

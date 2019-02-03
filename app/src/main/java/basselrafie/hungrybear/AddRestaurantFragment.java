@@ -3,6 +3,7 @@ package basselrafie.hungrybear;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.text.TextUtils;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -55,7 +56,6 @@ public class AddRestaurantFragment extends Fragment {
         RLink = view.findViewById(R.id.txt_rlink);
         RBild = view.findViewById(R.id.txt_rbild);
 
-
         BnRSave = view.findViewById(R.id.bn_save_restaurant);
 
         BnRSave.setOnClickListener(new View.OnClickListener() {
@@ -82,46 +82,104 @@ public class AddRestaurantFragment extends Fragment {
                 String rlink = RLink.getText().toString();
                 String rbild = RBild.getText().toString();
 
+                //Abfrage ob Felder gefüllt sind
+
+                try {
+
+                    if (TextUtils.isEmpty(rid)) {
+                        RId.setError("ID muss gefüllt sein");
+                    }
+                    if (TextUtils.isEmpty(rname)) {
+                        RName.setError("Name muss gefüllt sein");
+                    }
+                    if (TextUtils.isEmpty(rstraße)) {
+                        RStraße.setError("Straße muss gefüllt sein");
+                    }
+                    if (TextUtils.isEmpty(rhausnr)) {
+                        RHausNr.setError("Hausnummer muss gefüllt sein");
+                    }
+                    if (TextUtils.isEmpty(rort)) {
+                        ROrt.setError("Ort muss gefüllt sein");
+                    }
+                    if (TextUtils.isEmpty(rplz)) {
+                        Rplz.setError("PLZ muss gefüllt sein");
+                    }
+                    if (TextUtils.isEmpty(rvon)) {
+                        RVon.setError("Von muss gefüllt sein");
+                    }
+                    if (TextUtils.isEmpty(rbis)) {
+                        RBis.setError("Bis muss gefüllt sein");
+                    }
+                    if (TextUtils.isEmpty(rtelefon)) {
+                        RTelefon.setError("Telefonnummer muss gefüllt sein");
+                    } else {
+
+                        if (!TextUtils.isEmpty(rlink) && !TextUtils.isEmpty(rbild)) {
+                            //neues Restaurant anlegen + Link und Bild gefüllt
+                            Restaurants restaurants = new Restaurants(rid, rname, rdoener, rpizza, ritalian, rasian, rsteak, rburger, rbaguette, rsalad, rfish, rstraße, rhausnr, rplz, rort, rtelefon, rvon, rbis, rlink, rbild);
 
 
-                //neues Restaurant anlegen
-                Restaurants restaurants = new Restaurants(rid,rname,rdoener,rpizza,ritalian,rasian,rsteak,rburger,rbaguette,rsalad,rfish,rstraße,rhausnr,rplz,rort,rtelefon,rvon,rbis,rlink,rbild);
-                /*restaurants.setRid(rid);
-                restaurants.setRname(rname);
-                restaurants.setRdoener(rdoener);
-                restaurants.setRpizza(rpizza);
-                restaurants.setRitalian(ritalian);
-                restaurants.setRasian(rasian);
-                restaurants.setRsteak(rsteak);
-                restaurants.setRburger(rburger);
-                restaurants.setRbaguette(rbaguette);
-                restaurants.setRsalat(rsalad);
-                restaurants.setRfish(rfish);*/
-
-                AdminHome.restaurantDatabase.dao().addRestaurant(restaurants);
-                Toast.makeText(getContext(),"Restaurant added", Toast.LENGTH_SHORT).show();
+                            AdminHome.restaurantDatabase.dao().addRestaurant(restaurants);
+                            Toast.makeText(getContext(), "Restaurant added", Toast.LENGTH_SHORT).show();
+                        }
+                        if (TextUtils.isEmpty(rlink) && !TextUtils.isEmpty(rbild)) {
+                            //neues Restaurant anlegen + nur Bild gefüllt
+                            String elink = "Kein Link vorhanden";
+                            Restaurants restaurants = new Restaurants(rid, rname, rdoener, rpizza, ritalian, rasian, rsteak, rburger, rbaguette, rsalad, rfish, rstraße, rhausnr, rplz, rort, rtelefon, rvon, rbis, elink, rbild);
 
 
-                //Inhalte der Variablen löschen
-                RId.setText("");
-                RName.setText("");
-                RStraße.setText("");
-                RHausNr.setText("");
-                RTelefon.setText("");
-                RVon.setText("");
-                RBis.setText("");
-                RDoener.setChecked(false);
-                RPizza.setChecked(false);
-                RItalian.setChecked(false);
-                RAsian.setChecked(false);
-                RSteak.setChecked(false);
-                RBurger.setChecked(false);
-                RBaguette.setChecked(false);
-                RSalad.setChecked(false);
-                RFish.setChecked(false);
-                RLink.setText("");
-                RBild.setText("");
+                            AdminHome.restaurantDatabase.dao().addRestaurant(restaurants);
+                            Toast.makeText(getContext(), "Restaurant added", Toast.LENGTH_SHORT).show();
+                        }
+                        if (!TextUtils.isEmpty(rlink) && TextUtils.isEmpty(rbild)) {
+                            //neues Restaurant anlegen + nur Link gefüllt
+                            String ebild = "keine_speisekarte";
+                            Restaurants restaurants = new Restaurants(rid, rname, rdoener, rpizza, ritalian, rasian, rsteak, rburger, rbaguette, rsalad, rfish, rstraße, rhausnr, rplz, rort, rtelefon, rvon, rbis, rlink, ebild);
 
+
+                            AdminHome.restaurantDatabase.dao().addRestaurant(restaurants);
+                            Toast.makeText(getContext(), "Restaurant added", Toast.LENGTH_SHORT).show();
+                        } else {
+                            //neues REstaurant anlegen + Bild und Link nicht gefüllt
+                            String ebild = "keine_speisekarte";
+                            String elink = "Kein Link vorhanden";
+                            Restaurants restaurants = new Restaurants(rid, rname, rdoener, rpizza, ritalian, rasian, rsteak, rburger, rbaguette, rsalad, rfish, rstraße, rhausnr, rplz, rort, rtelefon, rvon, rbis, elink, ebild);
+
+
+                            AdminHome.restaurantDatabase.dao().addRestaurant(restaurants);
+                            Toast.makeText(getContext(), "Restaurant added", Toast.LENGTH_SHORT).show();
+                        }
+
+
+                        //Inhalte der Variablen löschen
+                        RId.setText("");
+                        RName.setText("");
+                        RStraße.setText("");
+                        RHausNr.setText("");
+                        RTelefon.setText("");
+                        RVon.setText("");
+                        RBis.setText("");
+                        RDoener.setChecked(false);
+                        RPizza.setChecked(false);
+                        RItalian.setChecked(false);
+                        RAsian.setChecked(false);
+                        RSteak.setChecked(false);
+                        RBurger.setChecked(false);
+                        RBaguette.setChecked(false);
+                        RSalad.setChecked(false);
+                        RFish.setChecked(false);
+                        RLink.setText("");
+                        RBild.setText("");
+
+                    }
+
+                }catch (Exception e){
+                    Toast.makeText(getContext(),"Fehler. Restaurant ID ist bereits vorhanden", Toast.LENGTH_LONG).show();
+                    int irid = Integer.parseInt(rid);
+                    int jrid = irid + 1;
+                    String srid = String.valueOf(jrid);
+                    RId.setText(srid);
+                }
 
             }
 

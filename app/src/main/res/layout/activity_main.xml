@@ -234,8 +234,8 @@
 
     <TextView
         android:id="@+id/tburger"
-        android:layout_width="59dp"
-        android:layout_height="25dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
@@ -243,6 +243,7 @@
         android:text="Burger"
         android:textColor="@color/Black"
         android:textSize="18sp"
+        android:textStyle="bold"
         android:shadowColor="@color/White"
         android:shadowDx="2"
         android:shadowDy="2"
@@ -262,6 +263,7 @@
         android:text="Pizza"
         android:textColor="@color/Black"
         android:textSize="18sp"
+        android:textStyle="bold"
         app:layout_constraintTop_toBottomOf="@id/pizza"
         app:layout_constraintRight_toRightOf="@id/pizza"
         app:layout_constraintLeft_toLeftOf="@id/pizza" />
@@ -277,6 +279,7 @@
         android:text="Italienisch"
         android:textColor="@color/Black"
         android:textSize="18sp"
+        android:textStyle="bold"
         app:layout_constraintTop_toBottomOf="@id/italian"
         app:layout_constraintRight_toRightOf="@id/italian"
         app:layout_constraintLeft_toLeftOf="@id/italian" />
@@ -284,7 +287,7 @@
     <TextView
         android:id="@+id/tbaguette"
         android:layout_width="wrap_content"
-        android:layout_height="23dp"
+        android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
@@ -292,6 +295,7 @@
         android:text="Baguette"
         android:textColor="@color/Black"
         android:textSize="18sp"
+        android:textStyle="bold"
         app:layout_constraintTop_toBottomOf="@id/baguette"
         app:layout_constraintRight_toRightOf="@id/baguette"
         app:layout_constraintLeft_toLeftOf="@id/baguette" />
@@ -307,6 +311,7 @@
         android:text="Asiatisch"
         android:textColor="@color/Black"
         android:textSize="18sp"
+        android:textStyle="bold"
         app:layout_constraintTop_toBottomOf="@id/asian"
         app:layout_constraintRight_toRightOf="@id/asian"
         app:layout_constraintLeft_toLeftOf="@id/asian" />
@@ -322,14 +327,15 @@
         android:text="Döner"
         android:textColor="@color/Black"
         android:textSize="18sp"
+        android:textStyle="bold"
         app:layout_constraintTop_toBottomOf="@id/doener"
         app:layout_constraintRight_toRightOf="@id/doener"
         app:layout_constraintLeft_toLeftOf="@id/doener" />
 
     <TextView
         android:id="@+id/tsalat"
-        android:layout_width="67dp"
-        android:layout_height="33dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
@@ -337,14 +343,15 @@
         android:text="Salat"
         android:textColor="@color/Black"
         android:textSize="18sp"
+        android:textStyle="bold"
         app:layout_constraintTop_toBottomOf="@id/salad"
         app:layout_constraintRight_toRightOf="@id/salad"
         app:layout_constraintLeft_toLeftOf="@id/salad" />
 
     <TextView
         android:id="@+id/tsteak"
-        android:layout_width="50dp"
-        android:layout_height="31dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
@@ -352,14 +359,15 @@
         android:text="Steak"
         android:textColor="@color/Black"
         android:textSize="18sp"
+        android:textStyle="bold"
         app:layout_constraintTop_toBottomOf="@id/steak"
         app:layout_constraintRight_toRightOf="@id/steak"
         app:layout_constraintLeft_toLeftOf="@id/steak" />
 
     <TextView
         android:id="@+id/tseafood"
-        android:layout_width="86dp"
-        android:layout_height="35dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
@@ -367,6 +375,7 @@
         android:text="Seafood"
         android:textColor="@color/Black"
         android:textSize="18sp"
+        android:textStyle="bold"
         app:layout_constraintTop_toBottomOf="@id/fish"
         app:layout_constraintRight_toRightOf="@id/fish"
         app:layout_constraintLeft_toLeftOf="@id/fish" />

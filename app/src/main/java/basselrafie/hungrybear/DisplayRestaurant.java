@@ -16,7 +16,6 @@ import android.widget.TextView;
 
 public class DisplayRestaurant extends AppCompatActivity {
 
-    Button call;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         TextView textView, textView1, textView2, RLink;
@@ -58,11 +57,16 @@ public class DisplayRestaurant extends AppCompatActivity {
         textView.setText(UVon + " Uhr - " + UBis + " Uhr");
 
 
+        String rlink = extras.getString("RLink");
+        if(rlink.matches("Kein Link vorhanden")){
+            RLink.setText(extras.getString("RStraße")+ " " + extras.getString("RHausNr"));
+        }
+        else {
+            String rLink = "<a href=\"" + rlink + "\">" + extras.getString("RStraße") + " " + extras.getString("RHausNr") + "</a>";
+            RLink.setText(Html.fromHtml(rLink));
 
-        String rLink = "<a href=\"" + extras.getString("RLink") + "\">" + extras.getString("RStraße")+ " " + extras.getString("RHausNr") +  "</a>";
-        RLink.setText(Html.fromHtml(rLink));
-
-        RLink.setMovementMethod(android.text.method.LinkMovementMethod.getInstance());
+            RLink.setMovementMethod(android.text.method.LinkMovementMethod.getInstance());
+        }
 
 
 

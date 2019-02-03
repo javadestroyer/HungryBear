@@ -11,6 +11,8 @@ import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import java.util.List;
+
 
 /**
  * A simple {@link Fragment} subclass.
@@ -18,7 +20,7 @@ import android.widget.Toast;
 public class UpdateRestaurantFragment extends Fragment {
     private EditText RId, RName, RStraße, RHausNr, Rplz, ROrt, RTelefon, RVon, RBis, RLink, RBild;
     private CheckBox RDoener, RPizza, RItalian, RAsian, RSteak, RBurger, RBaguette, RSalad, RFish;
-    private Button BnUpdate;
+    private Button BnUpdate, AutoFill;
 
 
     public UpdateRestaurantFragment() {
@@ -80,8 +82,6 @@ public class UpdateRestaurantFragment extends Fragment {
                 String rbild = RBild.getText().toString();
 
                 Restaurants restaurants = new Restaurants(rid,rname,rdoener,rpizza,ritalian,rasian,rsteak,rburger,rbaguette,rsalad,rfish,rstraße,rhausnr,rplz,rort,rtelefon,rvon,rbis,rlink,rbild);
-
-
 
                 AdminHome.restaurantDatabase.dao().updateRestaurant(restaurants);
                 Toast.makeText(getActivity(), "Restaurant updated", Toast.LENGTH_SHORT).show();
