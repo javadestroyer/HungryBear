@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/wood"
     tools:context=".MainActivity">
+    <!-- Quelle von dem background bild (wood): https://www.pexels.com/photo/abstract-antique-background-board-172277/ -->
 
 
     <ImageButton
@@ -27,6 +28,8 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.247"
         app:srcCompat="@drawable/burgerbtn" />
+    <!-- Quelle von dem Bild burger: https://www.fuddruckers.com/worlds-greatest-hamburgers -->
+
 
     <ImageButton
         android:id="@+id/pizza"
@@ -48,6 +51,8 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.223"
         app:srcCompat="@drawable/pizzabtn" />
+    <!-- Quelle von dem Bild pizza: https://coreymondello.com/image-pizza.html  -->
+
 
     <ImageButton
         android:id="@+id/italian"
@@ -68,6 +73,8 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.223"
         app:srcCompat="@drawable/italian" />
+    <!-- Quelle von dem Bild italian: https://www.kisspng.com/png-pasta-al-pomodoro-bolognese-sauce-pizza-spaghetti-685930/ -->
+
 
     <ImageButton
         android:id="@+id/baguette"
@@ -89,6 +96,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/baguettebtn" />
+    <!-- Quelle von dem Bild baguette: https://www.back-factory.de/lecker-frisch/produkt/rustino-chicken-nugget.html  -->
+
 
     <ImageButton
         android:id="@+id/asian"
@@ -107,6 +116,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/asian" />
+    <!-- Quelle von dem Bild asian: https://www.pngkey.com/detail/u2q8u2i1u2w7o0r5_asian-noodles-png-clipart-/  -->
+
 
     <ImageButton
         android:id="@+id/doener"
@@ -128,6 +139,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/doener" />
+    <!-- Quelle von dem Bild doener: http://mcisi.de -->
+
 
     <ImageButton
         android:id="@+id/salad"
@@ -148,6 +161,8 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.78"
         app:srcCompat="@drawable/salad" />
+    <!-- Quelle von dem Bilds salad: https://www.kisspng.com/png-caesar-salad-wrap-vinaigrette-greek-salad-salad-pn-102138/  -->
+
 
     <ImageButton
         android:id="@+id/fish"
@@ -168,6 +183,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.78"
         app:srcCompat="@drawable/fish" />
+    <!-- Quelle von dem Bild fish: http://www.stickpng.com/img/food/seafood/seafood-collection  -->
 
     <ImageButton
         android:id="@+id/steak"
@@ -190,6 +206,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.78"
         app:srcCompat="@drawable/steak" />
+    <!-- Quelle von dem Bild steak: https://ya-webdesign.com/explore/steak-png-transparent/?utm_source=gg#gal_672328  -->
 
     <TextView
         android:id="@+id/textView"
@@ -204,7 +221,7 @@
         android:text="Was möchtest du essen?"
         android:textColor="@color/colorPrimaryDark"
         android:textSize="30sp"
-        android:textStyle="bold|italic"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.492"
@@ -339,7 +356,6 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
         android:text="Salat"
         android:textColor="@color/Black"
         android:textSize="18sp"
@@ -385,15 +401,15 @@
         android:layout_width="72dp"
         android:layout_height="43dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="4dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
+        android:layout_marginBottom="684dp"
         android:background="@drawable/login"
         android:text="Log in"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.941"
+        app:layout_constraintHorizontal_bias="0.984"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.052" />
 </android.support.constraint.ConstraintLayout>
