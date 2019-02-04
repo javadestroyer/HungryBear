@@ -4,6 +4,8 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -56,6 +58,10 @@ public class activity_login extends AppCompatActivity {
             Intent intent = new Intent(activity_login.this, AdminHome.class);
             startActivity(intent);
         } else {
+
+            Animation shake = AnimationUtils.loadAnimation(this, R.anim.shake);
+            Login.startAnimation(shake);
+
             counter--;
 
             Info.setText(" No of attemtps remaining: " + String.valueOf(counter));
