@@ -1,12 +1,14 @@
 package basselrafie.hungrybear;
 
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageButton;
 
 
 /**
@@ -15,6 +17,7 @@ import android.widget.Button;
 public class HomeFragment extends Fragment implements View.OnClickListener {
 
     private Button BnAddRestaurant, BnViewRestaurant, BnDeleteREstaurant, BnUpdateRestaurant;
+    private ImageButton BnHome;
 
 
     public HomeFragment() {
@@ -39,6 +42,9 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
 
         BnUpdateRestaurant = view.findViewById(R.id.bn_update_Restaurant);
         BnUpdateRestaurant.setOnClickListener(this);
+
+        BnHome = view.findViewById(R.id.home_button);
+        BnHome.setOnClickListener(this);
 
         return view;
     }
@@ -67,6 +73,10 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
                 AdminHome.fragmentManager.beginTransaction().replace(R.id.fragment_container, new UpdateRestaurantFragment()).addToBackStack(null).commit();
 
                 break;
+
+            case R.id.home_button:
+                        Intent i = new Intent(getContext(), MainActivity.class);
+                        startActivity(i);
         }
     }
 

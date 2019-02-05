@@ -21,6 +21,9 @@ public class DisplayRestaurant extends AppCompatActivity {
         TextView textView, textView1, textView2, RLink;
         ImageButton imageButton;
         ImageView imageView;
+        ImageButton BnHome;
+
+
 
 
         super.onCreate(savedInstanceState);
@@ -31,6 +34,20 @@ public class DisplayRestaurant extends AppCompatActivity {
         RLink = findViewById(R.id.txt_rlink);
         imageView = findViewById(R.id.imageView);
         imageButton = findViewById(R.id.calleurodoener);
+
+        BnHome = findViewById(R.id.home_button);
+
+
+        BnHome.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(getApplicationContext(), MainActivity.class);
+                startActivity(i);
+
+            }
+        });
+
+
 
         final Bundle extras = getIntent().getExtras();
 

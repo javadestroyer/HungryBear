@@ -11,12 +11,18 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
 
+        <ImageButton
+            android:id="@+id/home_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_home_black_24dp"/>
+
         <TextView
             android:id="@+id/txt_view_2"
             android:layout_width="379dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="40dp"
             android:maxLines="4"
             android:singleLine="false"
             android:text="Euro Döner"
@@ -54,7 +60,7 @@
 
         <TextView
             android:id="@+id/textView5"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="0dp"
             android:layout_marginEnd="5dp"
@@ -80,7 +86,7 @@
 
         <TextView
             android:id="@+id/txt_rtelefon"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="0dp"
             android:textColor="@color/Black"
@@ -105,7 +111,7 @@
 
         <TextView
             android:id="@+id/adresse"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_marginStart="30dp"
             android:text="Adresse: "
@@ -117,7 +123,7 @@
 
         <TextView
             android:id="@+id/txt_rlink"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_marginStart="0dp"
             android:text="RLink"
