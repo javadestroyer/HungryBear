@@ -11,8 +11,8 @@
 
     <ImageButton
         android:id="@+id/burger"
-        android:layout_width="87dp"
-        android:layout_height="80dp"
+        android:layout_width="85dp"
+        android:layout_height="89dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
@@ -33,13 +33,11 @@
 
     <ImageButton
         android:id="@+id/pizza"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_width="103dp"
+        android:layout_height="95dp"
         android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp"
         android:background="@null"
         android:scaleType="fitXY"
@@ -49,15 +47,15 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.223"
+        app:layout_constraintVertical_bias="0.24"
         app:srcCompat="@drawable/pizzabtn" />
     <!-- Quelle von dem Bild pizza: https://coreymondello.com/image-pizza.html  -->
 
 
     <ImageButton
         android:id="@+id/italian"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_width="96dp"
+        android:layout_height="105dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
@@ -68,23 +66,21 @@
         android:scaleY="1.2"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.97"
+        app:layout_constraintHorizontal_bias="0.969"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.223"
+        app:layout_constraintVertical_bias="0.227"
         app:srcCompat="@drawable/italian" />
     <!-- Quelle von dem Bild italian: https://www.kisspng.com/png-pasta-al-pomodoro-bolognese-sauce-pizza-spaghetti-685930/ -->
 
 
     <ImageButton
         android:id="@+id/baguette"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_width="91dp"
+        android:layout_height="86dp"
         android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp"
         android:background="@null"
         android:scaleType="fitXY"
@@ -101,8 +97,8 @@
 
     <ImageButton
         android:id="@+id/asian"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_width="99dp"
+        android:layout_height="98dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
@@ -115,19 +111,18 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.494"
         app:srcCompat="@drawable/asian" />
     <!-- Quelle von dem Bild asian: https://www.pngkey.com/detail/u2q8u2i1u2w7o0r5_asian-noodles-png-clipart-/  -->
 
 
     <ImageButton
         android:id="@+id/doener"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_width="87dp"
+        android:layout_height="90dp"
         android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp"
         android:background="@null"
         android:scaleType="fitXY"
@@ -135,7 +130,7 @@
         android:scaleY="1.2"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.969"
+        app:layout_constraintHorizontal_bias="0.958"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/doener" />
@@ -144,8 +139,8 @@
 
     <ImageButton
         android:id="@+id/salad"
-        android:layout_width="104dp"
-        android:layout_height="102dp"
+        android:layout_width="101dp"
+        android:layout_height="89dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
@@ -166,8 +161,8 @@
 
     <ImageButton
         android:id="@+id/fish"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_width="90dp"
+        android:layout_height="82dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
@@ -182,18 +177,16 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.78"
-        app:srcCompat="@drawable/fish" />
+        app:srcCompat="@drawable/seafoodbtn" />
     <!-- Quelle von dem Bild fish: http://www.stickpng.com/img/food/seafood/seafood-collection  -->
 
     <ImageButton
         android:id="@+id/steak"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_width="91dp"
+        android:layout_height="91dp"
         android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp"
         android:background="@null"
         android:scaleType="fitXY"
@@ -211,8 +204,8 @@
     <TextView
         android:id="@+id/textView"
         style="@android:style/Widget.DeviceDefault.TextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="369dp"
+        android:layout_height="39dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
@@ -224,10 +217,10 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintHorizontal_bias="0.807"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.092" />
+        app:layout_constraintVertical_bias="0.091" />
 
     <Button
         android:id="@+id/allMenus"
